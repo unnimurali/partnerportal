@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.avlview.listners.CustomListeners"/>
+    <listener class-name="com.avlview.Analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="ForgotPasswordPageTest(failed)">
+    <classes>
+      <class name="com.avlview.app.testcases.ForgotPasswordPageTest">
+        <methods>
+          <include name="validateForgotPasswordPageExistTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.avlview.app.testcases.ForgotPasswordPageTest -->
+    </classes>
+  </test> <!-- ForgotPasswordPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

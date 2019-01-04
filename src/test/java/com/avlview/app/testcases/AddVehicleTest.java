@@ -13,7 +13,6 @@ import com.avlview.app.pages.AddClientPage;
 import com.avlview.app.pages.AddVehiclePage;
 import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.LoginPage;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class AddVehicleTest extends TestBase {
 
@@ -45,7 +44,7 @@ public class AddVehicleTest extends TestBase {
 	@Test(priority = 1, enabled = true)
 	public void TemplateTest() throws IOException, InterruptedException {
 
-		extentTest = extent.startTest("TemplateTest");
+		// extentTest = extent.startTest("TemplateTest");
 
 		String validateSearchResult = ac.validatesClientsearchresult();
 		Assert.assertEquals(validateSearchResult, "1");
@@ -65,25 +64,28 @@ public class AddVehicleTest extends TestBase {
 
 		System.out.println(result.getStatus());
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getThrowable());
-
-			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
-
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
-
-			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.SKIP, extentTest.addScreenCapture(screenshotPath));
-
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
-
-		}
-
-		extent.endTest(extentTest);
+		/*
+		 * if (result.getStatus() == ITestResult.FAILURE) {
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" +
+		 * result.getThrowable());
+		 * 
+		 * String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+		 * extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		 * 
+		 * } else if (result.getStatus() == ITestResult.SKIP) {
+		 * extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
+		 * 
+		 * String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+		 * extentTest.log(LogStatus.SKIP, extentTest.addScreenCapture(screenshotPath));
+		 * 
+		 * } else if (result.getStatus() == ITestResult.SUCCESS) {
+		 * extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
+		 * 
+		 * }
+		 * 
+		 * extent.endTest(extentTest);
+		 */
 
 		driver.quit();
 

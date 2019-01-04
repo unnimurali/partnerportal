@@ -13,7 +13,6 @@ import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.LoginPage;
 import com.avlview.app.pages.SettingsPage;
 import com.avlview.app.pages.TaxListPage;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class TaxListPageTest extends TestBase {
 
@@ -43,35 +42,35 @@ public class TaxListPageTest extends TestBase {
 
 	@Test(priority = 1, enabled = true)
 	public void validateTaxpageExistTest() {
-		extentTest = extent.startTest("validateTaxpageExistTest");
+		// extentTest = extent.startTest("validateTaxpageExistTest");
 		String validatetaxspage = tlp.validateTaxPage();
 		Assert.assertEquals(validatetaxspage, "Taxes");
 	}
 
 	@Test(priority = 2, enabled = true)
 	public void validateAddTaxExistTest() {
-		extentTest = extent.startTest("validateAddTaxExistTest");
+		// extentTest = extent.startTest("validateAddTaxExistTest");
 		String validateaddtaxspage = tlp.validateAddTax();
 		Assert.assertEquals(validateaddtaxspage, "ADD TAX");
 	}
 
 	@Test(priority = 3, enabled = true)
 	public void validateAddTaxTemplateExistTest() throws InterruptedException {
-		extentTest = extent.startTest("validateAddTaxTemplateExistTest");
+		// extentTest = extent.startTest("validateAddTaxTemplateExistTest");
 		String validatetaxstemplatepage = tlp.validateAddTaxTemplate();
 		Assert.assertEquals(validatetaxstemplatepage, "You are yet to add tax information here!");
 	}
 
 	@Test(priority = 4, enabled = true)
 	public void validateBackButtonTest() throws InterruptedException, IOException {
-		extentTest = extent.startTest("validateBackButtonTest");
+		// extentTest = extent.startTest("validateBackButtonTest");
 		String validatebackbutton = tlp.validateBackbutton();
 		Assert.assertEquals(validatebackbutton, "Settings");
 	}
 
 	@Test(priority = 5, enabled = false)
 	public void validateEditTest() throws InterruptedException, IOException {
-		extentTest = extent.startTest("validateEditTest");
+		// extentTest = extent.startTest("validateEditTest");
 		String validateupdatescreen = tlp.validateEditscreen();
 		Assert.assertEquals(validateupdatescreen, "Update Tax");
 	}
@@ -98,21 +97,24 @@ public class TaxListPageTest extends TestBase {
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getThrowable());
-
-			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
-
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
-
-		}
-
-		extent.endTest(extentTest);
+		/*
+		 * if (result.getStatus() == ITestResult.FAILURE) {
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" +
+		 * result.getThrowable());
+		 * 
+		 * String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+		 * extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		 * 
+		 * } else if (result.getStatus() == ITestResult.SKIP) {
+		 * extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName()); }
+		 * else if (result.getStatus() == ITestResult.SUCCESS) {
+		 * extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
+		 * 
+		 * }
+		 * 
+		 * extent.endTest(extentTest);
+		 */
 
 		driver.quit();
 

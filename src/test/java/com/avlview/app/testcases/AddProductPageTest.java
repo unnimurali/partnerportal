@@ -18,7 +18,6 @@ import com.avlview.app.pages.LoginPage;
 import com.avlview.app.pages.ProductListPage;
 import com.avlview.app.pages.SettingsPage;
 import com.avlview.app.utilities.TestUtil;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class AddProductPageTest extends TestBase {
 
@@ -49,7 +48,7 @@ public class AddProductPageTest extends TestBase {
 
 	@Test(priority = 1, enabled = true)
 	public void validateAddProduct() throws InterruptedException, IOException {
-		extentTest = extent.startTest("validateAddProduct");
+		// extentTest = extent.startTest("validateAddProduct");
 		app = plp.addProductclick();
 		String validateaddproduct = app.validateAddNewProduct();
 		Assert.assertEquals(validateaddproduct, "Add Product");
@@ -58,7 +57,7 @@ public class AddProductPageTest extends TestBase {
 	@Test(priority = 2, enabled = true, dataProvider = "getData")
 	public void AddProductTest(Hashtable<String, String> data) throws IOException, InterruptedException, AWTException {
 
-		extentTest = extent.startTest("AddProductTest");
+		// extentTest = extent.startTest("AddProductTest");
 
 		app = plp.addProductclick();
 		// System.out.println(data.get("isd").substring(0, 2));
@@ -76,7 +75,7 @@ public class AddProductPageTest extends TestBase {
 
 	@Test(priority = 3, enabled = true)
 	public void SearchAddedProductTest() throws IOException, InterruptedException, AWTException {
-		extentTest = extent.startTest("SearchAddedProductTest");
+		// extentTest = extent.startTest("SearchAddedProductTest");
 		// ac=cp.addclientclick();
 		String validateSearchResult = plp.validatesProductSearchresult();
 		Assert.assertEquals(validateSearchResult, "1");
@@ -91,21 +90,24 @@ public class AddProductPageTest extends TestBase {
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getThrowable());
-
-			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
-
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
-
-		}
-
-		extent.endTest(extentTest);
+		/*
+		 * if (result.getStatus() == ITestResult.FAILURE) {
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" +
+		 * result.getThrowable());
+		 * 
+		 * String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+		 * extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		 * 
+		 * } else if (result.getStatus() == ITestResult.SKIP) {
+		 * extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName()); }
+		 * else if (result.getStatus() == ITestResult.SUCCESS) {
+		 * extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
+		 * 
+		 * }
+		 * 
+		 * extent.endTest(extentTest);
+		 */
 
 		driver.quit();
 

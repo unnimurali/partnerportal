@@ -12,7 +12,6 @@ import com.avlview.app.base.TestBase;
 import com.avlview.app.pages.ForgotPasswordPage;
 import com.avlview.app.pages.LoginPage;
 import com.avlview.app.utilities.TestUtil;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class ForgotPasswordPageTest1 extends TestBase {
 
@@ -33,7 +32,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 1, enabled = true)
 	public void validateForgotPasswordPageExistTest() throws IOException {
-		extentTest = extent.startTest("validateForgotPasswordPageExistTest");
+		// extentTest = extent.startTest("validateForgotPasswordPageExistTest");
 		fp = lp.ForgotPassword();
 		String validateForgotpage = fp.ValidateForgotpasswordpage();
 		Assert.assertEquals(validateForgotpage, "Forgot your password?");
@@ -41,7 +40,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 2, enabled = true)
 	public void validateClientLogoExistTest() throws InterruptedException, IOException {
-		extentTest = extent.startTest("validateClientLogoExistTest");
+		// extentTest = extent.startTest("validateClientLogoExistTest");
 		fp = lp.ForgotPassword();
 		boolean validateClientLogo = fp.validateClientLogo();
 		Assert.assertTrue(validateClientLogo);
@@ -49,7 +48,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 3, enabled = true)
 	public void validateApplogoExistTest() throws IOException {
-		extentTest = extent.startTest("validateApplogoExistTest");
+		// extentTest = extent.startTest("validateApplogoExistTest");
 		fp = lp.ForgotPassword();
 		boolean ApplogoExist = fp.validateApplogo();
 		Assert.assertTrue(ApplogoExist);
@@ -57,7 +56,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 4, enabled = true)
 	public void validateBacktoLoginExistTest() throws IOException {
-		extentTest = extent.startTest("validateBacktoLoginExistTest");
+		// extentTest = extent.startTest("validateBacktoLoginExistTest");
 		fp = lp.ForgotPassword();
 		String Backtl = fp.ValidateBackTologin();
 		Assert.assertEquals(Backtl, "Back to Login");
@@ -65,7 +64,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 5, enabled = true)
 	public void validateBacktoLoginClickTest() throws IOException {
-		extentTest = extent.startTest("validateBacktoLoginClickTest");
+		// extentTest = extent.startTest("validateBacktoLoginClickTest");
 		fp = lp.ForgotPassword();
 		fp.BacktoLoginClick();
 		String validateloginpage = lp.validateLoginPage();
@@ -74,7 +73,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 6, enabled = true)
 	public void validateNouserClickTest() throws IOException {
-		extentTest = extent.startTest("validateNouserClickTest");
+		// extentTest = extent.startTest("validateNouserClickTest");
 		fp = lp.ForgotPassword();
 		String validateNousermessage = fp.ValidateNousermessage();
 		Assert.assertEquals(validateNousermessage, "Please enter the username.");
@@ -82,7 +81,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 7, enabled = TestUtil.is_execute)
 	public void validateInvaliduserClickTest() throws IOException {
-		extentTest = extent.startTest("validateInvaliduserClickTest");
+		// extentTest = extent.startTest("validateInvaliduserClickTest");
 		fp = lp.ForgotPassword();
 
 		String validateInvalidusermessage = fp.ValidateInvalidusermessage();
@@ -92,7 +91,7 @@ public class ForgotPasswordPageTest1 extends TestBase {
 
 	@Test(priority = 8, enabled = true)
 	public void validateValiduserClickTest() throws IOException {
-		extentTest = extent.startTest("validateValiduserClickTest");
+		// extentTest = extent.startTest("validateValiduserClickTest");
 		fp = lp.ForgotPassword();
 		String validateValidusermessage = fp.validateCorrectusermessage();
 		Assert.assertEquals(validateValidusermessage, "A verification email has been sent to");
@@ -102,21 +101,24 @@ public class ForgotPasswordPageTest1 extends TestBase {
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getThrowable());
-
-			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
-
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
-
-		}
-
-		extent.endTest(extentTest);
+		/*
+		 * if (result.getStatus() == ITestResult.FAILURE) {
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" +
+		 * result.getThrowable());
+		 * 
+		 * String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+		 * extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		 * 
+		 * } else if (result.getStatus() == ITestResult.SKIP) {
+		 * extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName()); }
+		 * else if (result.getStatus() == ITestResult.SUCCESS) {
+		 * extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
+		 * 
+		 * }
+		 * 
+		 * extent.endTest(extentTest);
+		 */
 
 		driver.quit();
 

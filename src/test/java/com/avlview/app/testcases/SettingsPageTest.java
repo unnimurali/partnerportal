@@ -15,7 +15,6 @@ import com.avlview.app.pages.LoginPage;
 import com.avlview.app.pages.SettingsPage;
 import com.avlview.app.pages.TaxListPage;
 import com.avlview.app.utilities.Constant;
-import com.relevantcodes.extentreports.LogStatus;
 
 public class SettingsPageTest extends TestBase {
 
@@ -44,7 +43,7 @@ public class SettingsPageTest extends TestBase {
 
 	@Test(priority = 1, enabled = true)
 	public void validatesettingspageExistTest() {
-		extentTest = extent.startTest("validatesettingspageExistTest");
+		// extentTest = extent.startTest("validatesettingspageExistTest");
 		String validatesettingspage = sp.validateSettingsPage();
 		Assert.assertEquals(validatesettingspage, "Settings");
 	}
@@ -58,7 +57,7 @@ public class SettingsPageTest extends TestBase {
 
 		SoftAssert softAssertion = new SoftAssert();
 
-		extentTest = extent.startTest("validatesettingspageTabExistTest");
+		// extentTest = extent.startTest("validatesettingspageTabExistTest");
 
 		// ArrayList<String> person = sp.validateTabs();
 		// System.out.println(person);
@@ -92,7 +91,7 @@ public class SettingsPageTest extends TestBase {
 
 		SoftAssert softAssertion = new SoftAssert();
 
-		extentTest = extent.startTest("validatesettingspageSubTabsExistTest");
+		// extentTest = extent.startTest("validatesettingspageSubTabsExistTest");
 
 		// ArrayList<String> person = sp.validateSubTabs(Constant.device);
 		// System.out.println(person);
@@ -125,29 +124,31 @@ public class SettingsPageTest extends TestBase {
 	}
 
 	public void taxclick() throws IOException {
-		extentTest = extent.startTest("taxclick");
+		// extentTest = extent.startTest("taxclick");
 		atp = sp.taxClick();
 	}
 
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 
-		if (result.getStatus() == ITestResult.FAILURE) {
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
-			extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getThrowable());
-
-			String screenshotPath = TestBase.getScreenshot(driver, result.getName());
-			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
-
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
-
-		}
-
-		extent.endTest(extentTest);
-
+		/*
+		 * if (result.getStatus() == ITestResult.FAILURE) {
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" + result.getName());
+		 * extentTest.log(LogStatus.FAIL, "Test case failed is" +
+		 * result.getThrowable());
+		 * 
+		 * String screenshotPath = TestBase.getScreenshot(driver, result.getName());
+		 * extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		 * 
+		 * } else if (result.getStatus() == ITestResult.SKIP) {
+		 * extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName()); }
+		 * else if (result.getStatus() == ITestResult.SUCCESS) {
+		 * extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
+		 * 
+		 * }
+		 * 
+		 * extent.endTest(extentTest);
+		 */
 		driver.quit();
 
 	}

@@ -2,28 +2,27 @@
 
 package com.avlview.ExtentReporterListner;
 
-import java.io.File;
-import java.util.Date;
-
-import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentManager {
 	private static ExtentReports extent;
-	
-	private ExtentManager(){}
+
+	private ExtentManager() {
+	}
 
 	public static ExtentReports getInstance() {
 		if (extent == null) {
-			//Date d= new Date();
-			//String fileName=d.toString().replace(":", "_").replace(" ", "_")+".html";
-			//extent = new ExtentReports(System.getProperty("user.dir")+File.separator+fileName, true, DisplayOrder.OLDEST_FIRST);
+			// Date d= new Date();
+			// String fileName=d.toString().replace(":", "_").replace(" ", "_")+".html";
+			// extent = new
+			// ExtentReports(System.getProperty("user.dir")+File.separator+fileName, true,
+			// DisplayOrder.OLDEST_FIRST);
 
-	
-//			extent.loadConfig(new File(System.getProperty("user.dir") + "//src//test//resources//extentconfig//ReportsConfig.xml"));
+			// extent.loadConfig(new File(System.getProperty("user.dir") +
+			// "//src//test//resources//extentconfig//ReportsConfig.xml"));
 			// optional
-			//extent.addSystemInfo("Selenium Version", "2.53.1").addSystemInfo(
-				//	"Environment", "PROD");
+			// extent.addSystemInfo("Selenium Version", "2.53.1").addSystemInfo(
+			// "Environment", "PROD");
 			extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
 			extent.addSystemInfo("Host Name", "Murali");
 			extent.addSystemInfo("User Name", "mkrishnan");

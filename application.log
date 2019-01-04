@@ -1,0 +1,140 @@
+2019-01-04 14:46:30,373 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:46:41,780 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:46:42,274  INFO [main] TestBase:46 - Inside validateLoginPageExistTest
+2019-01-04 14:46:42,872  INFO [main] TestBase:51 - Sucessfully executed validateLoginPageExistTest
+2019-01-04 14:46:42,936 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:46:42,940 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:46:42,944 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:46:42,948 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:46:42,948 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:46:44,945  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:46:47,701 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:46:59,456 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:47:02,560 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:47:02,564 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:47:02,564 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:47:02,568 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:47:02,568 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:47:03,645  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:47:06,258 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:47:17,674 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:47:18,702 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:47:18,703 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:47:18,703 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:47:18,704 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:47:18,705 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:47:20,025  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:47:22,453 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:47:34,170 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:47:35,165 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:47:35,166 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:47:35,166 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:47:35,168 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:47:35,168 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:47:36,478  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:47:38,947 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:47:54,272 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:47:54,963 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:47:54,963 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:47:54,963 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:47:54,964 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:47:54,965 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:47:56,141  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:47:58,658 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:48:11,385 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:48:26,042 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:48:26,043 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:48:26,044 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:48:26,044 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:48:26,045 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:48:27,151  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:48:30,129 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:48:44,135 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:48:46,658 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:48:46,662 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:48:46,662 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:48:46,662 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:48:46,662 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:48:47,791  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:48:50,590 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:49:01,787 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:49:19,283 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:49:19,287 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:49:19,287 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:49:19,287 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:49:19,287 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:49:20,492  INFO [main] TestBase:143 - Execution comleted
+2019-01-04 14:49:23,376 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:49:34,544 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:49:34,640  INFO [main] TestBase:42 - Inside validateForgotPasswordPageExistTest
+2019-01-04 14:50:02,263 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:50:02,263 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:50:02,264 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:50:02,264 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:50:02,264 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:50:03,697  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:50:06,070 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:50:17,080 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:50:17,175  INFO [main] TestBase:42 - Inside validateForgotPasswordPageExistTest
+2019-01-04 14:50:46,632 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:50:46,632 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:50:46,632 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:50:46,636 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:50:46,636 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:50:47,807  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:50:50,715 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:50:59,376 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:51:01,926 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:51:01,926 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:51:01,926 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:51:01,926 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:51:01,930 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:51:03,027  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:51:05,412 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:51:12,196 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:51:14,246 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:51:14,247 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:51:14,248 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:51:14,248 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:51:14,249 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:51:15,667  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:51:18,087 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:51:25,336 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:51:42,389 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:51:42,389 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:51:42,389 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:51:42,393 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:51:42,393 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:51:43,484  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:51:46,400 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:51:53,138 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:52:01,970 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:52:01,970 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:52:01,970 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:52:01,970 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:52:01,970 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:52:03,265  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:52:06,225 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:52:13,950 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:52:21,657 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:52:21,658 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:52:21,659 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:52:21,660 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:52:21,660 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:52:22,912  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:52:25,527 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:52:36,787 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:52:54,131 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:52:54,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:52:54,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:52:54,135 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:52:54,135 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:52:55,277  INFO [main] TestBase:134 - Execution comleted
+2019-01-04 14:52:58,073 DEBUG [main] TestBase:96 - Chrome launched
+2019-01-04 14:53:09,677 DEBUG [main] TestBase:115 - Navigated tohttps://preapp.avlview.com
+2019-01-04 14:53:24,375 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2019-01-04 14:53:24,375 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2019-01-04 14:53:24,375 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-01-04 14:53:24,375 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-01-04 14:53:24,379 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/mkrishnan/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-01-04 14:53:25,570  INFO [main] TestBase:134 - Execution comleted
