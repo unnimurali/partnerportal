@@ -10,6 +10,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.UnsupportedCommandException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -111,9 +112,31 @@ public class AddClientPage extends TestBase {
 	@FindBy(xpath = "//a[contains(text(),'newclint')]")
 	WebElement newclient;
 
+	@FindBy(xpath = "//h3[contains(text(),'No')]")
+	WebElement nomatch;
+
 	public String validateAddclient() {
 		System.out.println(addclient.getText());
 		return addclient.getText();
+	}
+
+	public String validateDefaultTemplate() {
+
+		try {
+			System.out.println(validatenoclient.getText());
+			return validatenoclient.getText();
+		} catch (Exception e) {
+			if (e instanceof NoSuchElementException) {
+				throw new SkipException("Skipping as clients data's are already available.");
+			}
+		}
+		return null;
+
+	}
+
+	public String validateNomatchTemplate() {
+		System.out.println(nomatch.getText());
+		return nomatch.getText();
 	}
 
 	public String validatemsg() throws InterruptedException {
@@ -262,7 +285,7 @@ public class AddClientPage extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(search));
 
 		search.click();
-		search.sendKeys(prop.getProperty("addedclient"));
+		search.sendKeys(prop.getProperty("clienttosearch"));
 		search.sendKeys(Keys.ENTER);
 
 		/*
@@ -315,11 +338,11 @@ public class AddClientPage extends TestBase {
 
 		System.out.println(searchcount.getText());
 
-		if (searchcount.getText().equals("0")) {
-			System.out.println(validatenoclient.getText());
-			txt = validatenoclient.getText();
-			System.out.println(txt);
-		}
+		// if (searchcount.getText().equals("0")) {
+		// System.out.println(nomatch.getText());
+		// txt = nomatch.getText();
+		// System.out.println(txt);
+		// }
 
 		return searchcount.getText();
 		// TODO Auto-generated method stub

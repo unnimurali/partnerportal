@@ -72,6 +72,14 @@ public class ClientsPageTest extends TestBase {
 
 	}
 
+	@Test(priority = 7, enabled = true)
+	public void validateRemoteLoginTest() throws InterruptedException {
+		// extentTest = extent.startTest("validateTotalTabsTest");
+		String validatetxt = cp.validatesRemotelogin();
+		Assert.assertEquals(validatetxt, "You're signed out, you may re-login here");
+
+	}
+
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {
 

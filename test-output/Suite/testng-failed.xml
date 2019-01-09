@@ -5,15 +5,26 @@
     <listener class-name="com.avlview.listners.CustomListeners"/>
     <listener class-name="com.avlview.Analyzer.MyTransformer"/>
   </listeners>
-  <test thread-count="5" name="ForgotPasswordPageTest(failed)">
+  <test thread-count="5" name="ClientsPageTest(failed)">
     <classes>
-      <class name="com.avlview.app.testcases.ForgotPasswordPageTest">
+      <class name="com.avlview.app.testcases.ClientsPageTest">
         <methods>
-          <include name="validateForgotPasswordPageExistTest"/>
-          <include name="teardown"/>
+          <include name="validateTotalTabsTest"/>
           <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.ForgotPasswordPageTest -->
+      </class> <!-- com.avlview.app.testcases.ClientsPageTest -->
     </classes>
-  </test> <!-- ForgotPasswordPageTest(failed) -->
+  </test> <!-- ClientsPageTest(failed) -->
+  <test thread-count="5" name="AddClientPageTest(failed)">
+    <classes>
+      <class name="com.avlview.app.testcases.AddClientPageTest">
+        <methods>
+          <include name="NoClientExistTemplateTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.avlview.app.testcases.AddClientPageTest -->
+    </classes>
+  </test> <!-- AddClientPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

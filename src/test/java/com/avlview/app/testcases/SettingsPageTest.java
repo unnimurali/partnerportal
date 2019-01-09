@@ -65,9 +65,9 @@ public class SettingsPageTest extends TestBase {
 		// System.out.println(dev);
 		// softAssertion.assertEquals(dev, Constant.device, "Device section not found");
 
-		sp.validateTabs();
-		device = sp.findItemInTheList(Constant.device);
-		softAssertion.assertTrue(device, "Device section not found");
+		// sp.validateTabs();
+		// device = sp.findItemInTheList(Constant.device);
+		// softAssertion.assertTrue(device, "Device section not found");
 
 		sp.validateTabs();
 		featuers = sp.findItemInTheList(Constant.features);

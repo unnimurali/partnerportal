@@ -1,6 +1,8 @@
 package com.avlview.app.pages;
 
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -43,6 +45,24 @@ public class ClientsPage extends TestBase {
 
 	@FindBy(xpath = "//span[contains(text(),'Settings')]")
 	WebElement settings;
+
+	@FindBy(xpath = "//a[@class='settings_drop_icon']")
+	WebElement settingsicon;
+
+	@FindBy(xpath = "//span[contains(text(),'Remote Login')]")
+	WebElement remotelogin;
+
+	@FindBy(xpath = "//div[@class='maxwndw_left margin_top_7']")
+	WebElement usertittile;
+
+	@FindBy(xpath = "//a[@class='max_more relative']")
+	WebElement usersettings;
+
+	@FindBy(xpath = "//div[contains(text(),'Sign Out')]")
+	WebElement signout;
+
+	@FindBy(xpath = "//span[contains(text(),'You')]")
+	WebElement txtaftersignout;
 
 	public String validateClientspage() {
 		System.out.println(clients.getText());
@@ -146,6 +166,44 @@ public class ClientsPage extends TestBase {
 
 		System.out.println(searchcount.getText());
 		return searchcount.getText();
+	}
+
+	public String validatesRemotelogin() throws InterruptedException {
+
+		WebDriverWait wait = new WebDriverWait(driver, 60); // wait for 5 seconds
+		wait.until(ExpectedConditions.visibilityOf(search));
+
+		search.click();
+		search.sendKeys(prop.getProperty("clientforremotelogin"));
+		search.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+
+		settingsicon.click();
+		Thread.sleep(2000);
+
+		remotelogin.click();
+		Thread.sleep(2000);
+
+		Set<String> ids = driver.getWindowHandles();
+		Iterator<String> it = ids.iterator();
+
+		String parentWindow = it.next();
+		System.out.println(" Parent win id is " + parentWindow);
+		System.out.println(" Parent tittle is " + driver.getTitle());
+
+		String newWindow = it.next();
+		System.out.println(" Child win id is " + newWindow);
+
+		driver.switchTo().window(newWindow);
+		System.out.println(" Child tittle is " + driver.getTitle());
+		System.out.println(usertittile.getText());
+
+		usersettings.click();
+		signout.click();
+		driver.close();
+
+		System.out.println(txtaftersignout.getText());
+		return txtaftersignout.getText();
 	}
 
 }

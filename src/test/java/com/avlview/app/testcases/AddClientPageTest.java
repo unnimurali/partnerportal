@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.avlview.app.base.TestBase;
 import com.avlview.app.pages.AddClientPage;
@@ -47,19 +48,36 @@ public class AddClientPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = false)
-	public void TemplateTest() throws IOException, InterruptedException {
+	@Test(priority = 1, enabled = true)
+	public void NoClientExistTemplateTest() throws IOException, InterruptedException {
+
+		SoftAssert softAssertion = new SoftAssert();
 
 		// extentTest = extent.startTest("TemplateTest");
 
-		String validateSearchResult = ac.validatesClientsearchresult();
-		String noclienttemplatetxt = AddClientPage.txt;
+		String noclienttemplatetxt = ac.validateDefaultTemplate();
 		System.out.println(noclienttemplatetxt);
-		Assert.assertEquals(noclienttemplatetxt, "CREATE YOUR FIRST CLIENT");
-		Assert.assertEquals(validateSearchResult, "0");
+		softAssertion.assertEquals(noclienttemplatetxt, "CREATE YOUR FIRST CLIENT");
+
+		// ac.search();
+		// String nomatchtemplate = ac.validateNomatchTemplate();
+		// System.out.println(nomatchtemplate);
+		// softAssertion.assertEquals(nomatchtemplate, "No matches found!");
+
+		softAssertion.assertAll();
 	}
 
 	@Test(priority = 2, enabled = true)
+	public void NoClientMatchTemplateTest() throws IOException, InterruptedException {
+
+		ac.search();
+		String nomatchtemplate = ac.validateNomatchTemplate();
+		System.out.println(nomatchtemplate);
+		Assert.assertEquals(nomatchtemplate, "No matches found!");
+
+	}
+
+	@Test(priority = 3, enabled = true)
 	public void ClickAddClientTest() throws IOException {
 
 		// extentTest = extent.startTest("ClickAddClientTest");
@@ -75,7 +93,7 @@ public class AddClientPageTest extends TestBase {
 	 * ac.addclient(); }
 	 */
 
-	@Test(priority = 3, enabled = false, dataProvider = "getData")
+	@Test(priority = 4, enabled = false, dataProvider = "getData")
 	public void AddclientTest(Hashtable<String, String> data) throws IOException, InterruptedException, AWTException {
 
 		// extentTest = extent.startTest("AddclientTest");
@@ -95,7 +113,7 @@ public class AddClientPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 5, enabled = false)
 	public void SearchAddedClientTest() throws IOException, InterruptedException, AWTException {
 		// extentTest = extent.startTest("SearchAddedClientTest");
 		// ac=cp.addclientclick();
@@ -103,7 +121,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "1");
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 6, enabled = false)
 	public void deActivateClientTest() throws IOException, InterruptedException, AWTException {
 		// extentTest = extent.startTest("deActivateClientTest");
 		// ac=cp.addclientclick();
@@ -111,7 +129,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "0");
 	}
 
-	@Test(priority = 6, enabled = false)
+	@Test(priority = 7, enabled = false)
 	public void deactivateSearchTest() throws InterruptedException {
 
 		// extentTest = extent.startTest("deactivateSearchTest");
@@ -120,7 +138,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(validateSearchResult, "1");
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 8, enabled = true)
 	public void items25Test() throws InterruptedException {
 		// extentTest = extent.startTest("items25Test");
 
@@ -137,7 +155,7 @@ public class AddClientPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 9, enabled = true)
 	public void items50Test() throws InterruptedException {
 		// extentTest = extent.startTest("items50Test");
 
@@ -153,7 +171,7 @@ public class AddClientPageTest extends TestBase {
 		 */
 	}
 
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 10, enabled = true)
 	public void items100Test() throws InterruptedException {
 		// extentTest = extent.startTest("items100Test");
 
@@ -163,7 +181,7 @@ public class AddClientPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 10, enabled = false)
+	@Test(priority = 11, enabled = true)
 	public void PaginationTestfor25Items() throws InterruptedException {
 		// extentTest = extent.startTest("PaginationTest");
 		ac.itemsperpage("25");
@@ -171,7 +189,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(paginationtxt, "26 - 50");
 	}
 
-	@Test(priority = 11, enabled = false)
+	@Test(priority = 12, enabled = true)
 	public void PaginationTestfor50Items() throws InterruptedException {
 		// extentTest = extent.startTest("PaginationTest");
 		ac.itemsperpage("50");
@@ -179,7 +197,7 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(paginationtxt, "51 - 100");
 	}
 
-	@Test(priority = 12, enabled = false)
+	@Test(priority = 13, enabled = true)
 	public void PaginationTestfor100Items() throws InterruptedException {
 		// extentTest = extent.startTest("PaginationTest");
 		ac.itemsperpage("100");

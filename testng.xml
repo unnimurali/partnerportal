@@ -16,7 +16,7 @@
 	</listeners>
 
 
-	<test name="Login Page Test">
+	<!-- <test name="Login Page Test">
 		<classes>
 			<class name="com.avlview.app.testcases.LoginPageTest" />
 		</classes>
@@ -26,7 +26,7 @@
 		<classes>
 			<class name="com.avlview.app.testcases.ForgotPasswordPageTest" />
 		</classes>
-	</test>
+	</test> -->
 
 
 	<!-- <test name="SettingsPageTest">
@@ -34,8 +34,8 @@
 			<class name="com.avlview.app.testcases.SettingsPageTest" />
 		</classes>
 	</test>
-
-	<test name="TaxListPageTest">
+ -->
+	<!-- <test name="TaxListPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.TaxListPageTest" />
 		</classes>
@@ -45,10 +45,10 @@
 		<classes>
 			<class name="com.avlview.app.testcases.AddTaxPageTest" />
 		</classes>
-	</test> -->
+	</test>
 	
 	
-	<!-- <test name="DeviceListPageTest">
+	<test name="DeviceListPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.DeviceListPageTest" />
 		</classes>
@@ -64,11 +64,11 @@
 		<classes>
 			<class name="com.avlview.app.testcases.UpdateDevicePageTest" />
 		</classes>
-	</test> -->
+	</test>
 	
 	
 	
-	<!-- <test name="ProductListPageTest">
+	<test name="ProductListPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.ProductListPageTest" />
 		</classes>
@@ -78,12 +78,12 @@
 		<classes>
 			<class name="com.avlview.app.testcases.AddProductPageTest" />
 		</classes>
-	</test> -->
-	
+	</test>
+	 -->
 
 	
 
-	<!-- <test name="ClientsPageTest">
+	<test name="ClientsPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.ClientsPageTest" />
 		</classes>
@@ -94,13 +94,13 @@
 			<class name="com.avlview.app.testcases.AddClientPageTest" />
 		</classes>
 	</test>
-
+<!-- 
 	<test name="AddVehicleTest">
 		<classes>
 			<class name="com.avlview.app.testcases.AddVehicleTest" />
 		</classes>
-	</test> -->
-
+	</test>
+ -->
 
  
 </suite> <!-- Suite -->
