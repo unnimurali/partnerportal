@@ -375,56 +375,47 @@ public class AddClientPage extends TestBase {
 		return count;
 	}
 
-	public boolean items50() throws InterruptedException {
-		int rows_count;
-		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
-
-		rows_count = rows_table.size();
-		System.out.println("Total rows in the grid is" + rows_count);
-
-		if (rows_count > 0) {
-
-			if (rows_count > 25 && rows_count <= 50) {
-				count = true;
-			} else {
-				throw new SkipException("Skipping Item50 as no data available.");
-			}
-		} else {
-			throw new SkipException("Skipping as no client data available.");
-		}
-
-		JavaScriptUtil.scrollIntoView(rangelabel, driver);
-		JavaScriptUtil.drawBorder(rangelabel, driver);
-
-		Thread.sleep(3000);
-
-		return count;
-	}
-
-	public boolean items100() throws InterruptedException {
-		int rows_count;
-		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
-
-		rows_count = rows_table.size();
-		System.out.println("Total rows in the grid is" + rows_count);
-
-		if (rows_count > 0) {
-
-			if (rows_count > 50 && rows_count <= 100) {
-				count = true;
-			} else {
-				throw new SkipException("Skipping Item100 as no data available.");
-			}
-		} else {
-			throw new SkipException("Skipping as no client data available.");
-		}
-
-		JavaScriptUtil.scrollIntoView(rangelabel, driver);
-		JavaScriptUtil.drawBorder(rangelabel, driver);
-
-		Thread.sleep(3000);
-		return count;
-	}
+	/*
+	 * public boolean items50() throws InterruptedException { int rows_count;
+	 * List<WebElement> rows_table =
+	 * driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"))
+	 * ;
+	 * 
+	 * rows_count = rows_table.size();
+	 * System.out.println("Total rows in the grid is" + rows_count);
+	 * 
+	 * if (rows_count > 0) {
+	 * 
+	 * if (rows_count > 25 && rows_count <= 50) { count = true; } else { throw new
+	 * SkipException("Skipping Item50 as no data available."); } } else { throw new
+	 * SkipException("Skipping as no client data available."); }
+	 * 
+	 * JavaScriptUtil.scrollIntoView(rangelabel, driver);
+	 * JavaScriptUtil.drawBorder(rangelabel, driver);
+	 * 
+	 * Thread.sleep(3000);
+	 * 
+	 * return count; }
+	 * 
+	 * public boolean items100() throws InterruptedException { int rows_count;
+	 * List<WebElement> rows_table =
+	 * driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"))
+	 * ;
+	 * 
+	 * rows_count = rows_table.size();
+	 * System.out.println("Total rows in the grid is" + rows_count);
+	 * 
+	 * if (rows_count > 0) {
+	 * 
+	 * if (rows_count > 50 && rows_count <= 100) { count = true; } else { throw new
+	 * SkipException("Skipping Item100 as no data available."); } } else { throw new
+	 * SkipException("Skipping as no client data available."); }
+	 * 
+	 * JavaScriptUtil.scrollIntoView(rangelabel, driver);
+	 * JavaScriptUtil.drawBorder(rangelabel, driver);
+	 * 
+	 * Thread.sleep(3000); return count; }
+	 */
 
 	public String pagination() throws InterruptedException {
 		String pagetxt;

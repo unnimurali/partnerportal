@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\mkrishnan\AppData\Local\Temp\testng-eclipse--33125829\testng-customsuite.xml</span>
+                    <span>C:\Users\mkrishnan\AppData\Local\Temp\testng-eclipse--764461261\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.ClientsPageTest" hash-for-method="validateTotalTabsTest">validateTotalTabsTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.AddClientPageTest" hash-for-method="PaginationTestfor25Items">PaginationTestfor25Items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.AddClientPageTest" hash-for-method="items25Test">items25Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,32 +121,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.ClientsPageTest" hash-for-method="validateAddclientExistTest">validateAddclientExistTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.AddClientPageTest" hash-for-method="ClickAddClientTest">ClickAddClientTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.ClientsPageTest" hash-for-method="validatePartnerLogoExistTest">validatePartnerLogoExistTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.AddClientPageTest" hash-for-method="NoClientExistTemplateTest">NoClientExistTemplateTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.ClientsPageTest" hash-for-method="validateRemoteLoginTest">validateRemoteLoginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.ClientsPageTest" hash-for-method="validateSearchExistTest">validateSearchExistTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.ClientsPageTest" hash-for-method="validateSearchResultTest">validateSearchResultTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.ClientsPageTest" hash-for-method="validateclientpageExistTest">validateclientpageExistTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.avlview.app.testcases.AddClientPageTest" hash-for-method="NoClientMatchTemplateTest">NoClientMatchTemplateTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -159,22 +149,124 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.avlview.app.testcases.ClientsPageTest</span>
+              <span class="class-name">com.avlview.app.testcases.AddClientPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateTotalTabsTest">
-                  </a> <!-- validateTotalTabsTest -->
-                  <span class="method-name">validateTotalTabsTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [3]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.avlview.app.testcases.ClientsPageTest.validateTotalTabsTest(ClientsPageTest.java:71)
+                  <a name="PaginationTestfor25Items">
+                  </a> <!-- PaginationTestfor25Items -->
+                  <span class="method-name">PaginationTestfor25Items</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;MKRISHNAN&apos;, ip: &apos;192.168.0.50&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\MKRISH~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65147}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: d5fdc2e9a68ba951974dcd65abf873ef
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.avlview.app.pages.AddClientPage.itemsperpage(AddClientPage.java:307)
+	at com.avlview.app.testcases.AddClientPageTest.PaginationTestfor25Items(AddClientPageTest.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="items25Test">
+                  </a> <!-- items25Test -->
+                  <span class="method-name">items25Test</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;MKRISHNAN&apos;, ip: &apos;192.168.0.50&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\MKRISH~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65108}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: d4d475130ac8bcb52578922ae7a631f9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.avlview.app.pages.AddClientPage.itemsperpage(AddClientPage.java:307)
+	at com.avlview.app.testcases.AddClientPageTest.items25Test(AddClientPageTest.java:148)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -209,49 +301,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.avlview.app.testcases.ClientsPageTest</span>
+              <span class="class-name">com.avlview.app.testcases.AddClientPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateAddclientExistTest">
-                  </a> <!-- validateAddclientExistTest -->
-                  <span class="method-name">validateAddclientExistTest</span>
+                  <a name="ClickAddClientTest">
+                  </a> <!-- ClickAddClientTest -->
+                  <span class="method-name">ClickAddClientTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validatePartnerLogoExistTest">
-                  </a> <!-- validatePartnerLogoExistTest -->
-                  <span class="method-name">validatePartnerLogoExistTest</span>
+                  <a name="NoClientExistTemplateTest">
+                  </a> <!-- NoClientExistTemplateTest -->
+                  <span class="method-name">NoClientExistTemplateTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateRemoteLoginTest">
-                  </a> <!-- validateRemoteLoginTest -->
-                  <span class="method-name">validateRemoteLoginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateSearchExistTest">
-                  </a> <!-- validateSearchExistTest -->
-                  <span class="method-name">validateSearchExistTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateSearchResultTest">
-                  </a> <!-- validateSearchResultTest -->
-                  <span class="method-name">validateSearchResultTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateclientpageExistTest">
-                  </a> <!-- validateclientpageExistTest -->
-                  <span class="method-name">validateclientpageExistTest</span>
+                  <a name="NoClientMatchTemplateTest">
+                  </a> <!-- NoClientMatchTemplateTest -->
+                  <span class="method-name">NoClientMatchTemplateTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -259,7 +330,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mkrishnan\AppData\Local\Temp\testng-eclipse--33125829\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mkrishnan\AppData\Local\Temp\testng-eclipse--764461261\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -268,7 +339,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.avlview.app.testcases.ClientsPageTest&quot;/&gt;
+      &lt;class name=&quot;com.avlview.app.testcases.AddClientPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -308,40 +379,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateRemoteLoginTest')
-data.setCell(0, 2, 'com.avlview.app.testcases.ClientsPageTest')
-data.setCell(0, 3, 21656);
+data.setCell(0, 1, 'items25Test')
+data.setCell(0, 2, 'com.avlview.app.testcases.AddClientPageTest')
+data.setCell(0, 3, 30788);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateSearchResultTest')
-data.setCell(1, 2, 'com.avlview.app.testcases.ClientsPageTest')
-data.setCell(1, 3, 6881);
+data.setCell(1, 1, 'PaginationTestfor25Items')
+data.setCell(1, 2, 'com.avlview.app.testcases.AddClientPageTest')
+data.setCell(1, 3, 30579);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validatePartnerLogoExistTest')
-data.setCell(2, 2, 'com.avlview.app.testcases.ClientsPageTest')
-data.setCell(2, 3, 673);
+data.setCell(2, 1, 'NoClientMatchTemplateTest')
+data.setCell(2, 2, 'com.avlview.app.testcases.AddClientPageTest')
+data.setCell(2, 3, 3187);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateSearchExistTest')
-data.setCell(3, 2, 'com.avlview.app.testcases.ClientsPageTest')
-data.setCell(3, 3, 164);
+data.setCell(3, 1, 'NoClientExistTemplateTest')
+data.setCell(3, 2, 'com.avlview.app.testcases.AddClientPageTest')
+data.setCell(3, 3, 1324);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateclientpageExistTest')
-data.setCell(4, 2, 'com.avlview.app.testcases.ClientsPageTest')
-data.setCell(4, 3, 129);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateAddclientExistTest')
-data.setCell(5, 2, 'com.avlview.app.testcases.ClientsPageTest')
-data.setCell(5, 3, 118);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateTotalTabsTest')
-data.setCell(6, 2, 'com.avlview.app.testcases.ClientsPageTest')
-data.setCell(6, 3, 43);
+data.setCell(4, 1, 'ClickAddClientTest')
+data.setCell(4, 2, 'com.avlview.app.testcases.AddClientPageTest')
+data.setCell(4, 3, 1078);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -356,9 +419,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.avlview.app.testcases.AddClientPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SearchAddedClientTest</span>
+                <br/>
+                <span class="ignored-method-name">deActivateClientTest</span>
+                <br/>
+                <span class="ignored-method-name">AddclientTest</span>
+                <br/>
+                <span class="ignored-method-name">deactivateSearchTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -367,92 +443,70 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.avlview.app.testcases.ClientsPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.avlview.app.testcases.AddClientPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateclientpageExistTest</span>
-                <span class="method-start">20084 ms</span>
+                <span class="method-name">NoClientExistTemplateTest</span>
+                <span class="method-start">33656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateclientpageExistTest status=SUCCESS method=ClientsPageTest.validateclientpag...)</span>
-                <span class="method-start">20213 ms</span>
+                <span class="method-name">teardown([TestResult name=NoClientExistTemplateTest status=SUCCESS method=AddClientPageTest.NoClientExistTemp...)</span>
+                <span class="method-start">34983 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21509 ms</span>
+                <span class="method-start">36069 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validatePartnerLogoExistTest</span>
-                <span class="method-start">40013 ms</span>
+                <span class="method-name">NoClientMatchTemplateTest</span>
+                <span class="method-start">75737 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validatePartnerLogoExistTest status=SUCCESS method=ClientsPageTest.validatePartnerL...)</span>
-                <span class="method-start">40689 ms</span>
+                <span class="method-name">teardown([TestResult name=NoClientMatchTemplateTest status=SUCCESS method=AddClientPageTest.NoClientMatchTemp...)</span>
+                <span class="method-start">78928 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">41694 ms</span>
+                <span class="method-start">80014 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateAddclientExistTest</span>
-                <span class="method-start">59947 ms</span>
+                <span class="method-name">ClickAddClientTest</span>
+                <span class="method-start">120606 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateAddclientExistTest status=SUCCESS method=ClientsPageTest.validateAddclientE...)</span>
-                <span class="method-start">60069 ms</span>
+                <span class="method-name">teardown([TestResult name=ClickAddClientTest status=SUCCESS method=AddClientPageTest.ClickAddClientTest()[pri...)</span>
+                <span class="method-start">121688 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">61041 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateSearchExistTest</span>
-                <span class="method-start">78441 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateSearchExistTest status=SUCCESS method=ClientsPageTest.validateSearchExistTe...)</span>
-                <span class="method-start">78609 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">79713 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateSearchResultTest</span>
-                <span class="method-start">98157 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateSearchResultTest status=SUCCESS method=ClientsPageTest.validateSearchResult...)</span>
-                <span class="method-start">105041 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">106125 ms</span>
+                <span class="method-start">122844 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validateTotalTabsTest</span>
-                <span class="method-start">129175 ms</span>
+                <span class="method-name">items25Test</span>
+                <span class="method-start">156393 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateTotalTabsTest status=FAILURE method=ClientsPageTest.validateTotalTabsTest()...)</span>
-                <span class="method-start">129234 ms</span>
+                <span class="method-name">teardown([TestResult name=items25Test status=FAILURE method=AddClientPageTest.items25Test()[pri:8, instance:c...)</span>
+                <span class="method-start">187185 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">130232 ms</span>
+                <span class="method-start">188306 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateRemoteLoginTest</span>
-                <span class="method-start">153455 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PaginationTestfor25Items</span>
+                <span class="method-start">219419 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateRemoteLoginTest status=SUCCESS method=ClientsPageTest.validateRemoteLoginTe...)</span>
-                <span class="method-start">175115 ms</span>
+                <span class="method-name">teardown([TestResult name=PaginationTestfor25Items status=FAILURE method=AddClientPageTest.PaginationTestfor2...)</span>
+                <span class="method-start">250002 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

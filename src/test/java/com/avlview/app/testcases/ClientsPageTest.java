@@ -26,7 +26,7 @@ public class ClientsPageTest extends TestBase {
 	public void setup() throws IOException {
 		Initialization();
 		lp = new LoginPage();
-		cp = lp.login(prop.getProperty("uname"), prop.getProperty("pwd"));
+		cp = lp.login(prop.getProperty("existing_uname"), prop.getProperty("existing_pwd"));
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -78,6 +78,73 @@ public class ClientsPageTest extends TestBase {
 		String validatetxt = cp.validatesRemotelogin();
 		Assert.assertEquals(validatetxt, "You're signed out, you may re-login here");
 
+	}
+
+	@Test(priority = 8, enabled = true)
+	public void items25Test() throws InterruptedException {
+		// extentTest = extent.startTest("items25Test");
+
+		// boolean cnt = ac.itemsperpage("25");
+		// Assert.assertTrue(cnt);
+
+		cp.itemsperpage("25");
+		boolean cnt = cp.items25();
+		Assert.assertTrue(cnt);
+
+		/*
+		 * String result = ac.itemsperpage("25"); Assert.assertEquals(result, "1 - 25");
+		 */
+
+	}
+
+	@Test(priority = 9, enabled = true)
+	public void items50Test() throws InterruptedException {
+		// extentTest = extent.startTest("items50Test");
+
+		// boolean cnt = ac.itemsperpage("50");
+		// Assert.assertTrue(cnt);
+
+		cp.itemsperpage("50");
+		boolean cnt = cp.items50();
+		Assert.assertTrue(cnt);
+
+		/*
+		 * String result = ac.itemsperpage("50"); Assert.assertEquals(result, "1 - 50");
+		 */
+	}
+
+	@Test(priority = 10, enabled = true)
+	public void items100Test() throws InterruptedException {
+		// extentTest = extent.startTest("items100Test");
+
+		cp.itemsperpage("100");
+		boolean cnt = cp.items100();
+		Assert.assertTrue(cnt);
+
+	}
+
+	@Test(priority = 11, enabled = true)
+	public void PaginationTestfor25Items() throws InterruptedException {
+		// extentTest = extent.startTest("PaginationTest");
+		cp.itemsperpage("25");
+		String paginationtxt = cp.pagination();
+		Assert.assertEquals(paginationtxt, "26 - 50");
+	}
+
+	@Test(priority = 12, enabled = true)
+	public void PaginationTestfor50Items() throws InterruptedException {
+		// extentTest = extent.startTest("PaginationTest");
+		cp.itemsperpage("50");
+		String paginationtxt = cp.pagination();
+		Assert.assertEquals(paginationtxt, "51 - 100");
+	}
+
+	@Test(priority = 13, enabled = true)
+	public void PaginationTestfor100Items() throws InterruptedException {
+		// extentTest = extent.startTest("PaginationTest");
+		cp.itemsperpage("100");
+		String paginationtxt = cp.pagination();
+		Assert.assertEquals(paginationtxt, "101 - 200");
 	}
 
 	@AfterMethod

@@ -155,33 +155,28 @@ public class AddClientPageTest extends TestBase {
 
 	}
 
+	/*
+	 * @Test(priority = 9, enabled = true) public void items50Test() throws
+	 * InterruptedException { // extentTest = extent.startTest("items50Test");
+	 * 
+	 * // boolean cnt = ac.itemsperpage("50"); // Assert.assertTrue(cnt);
+	 * 
+	 * ac.itemsperpage("50"); boolean cnt = ac.items50(); Assert.assertTrue(cnt);
+	 * 
+	 * 
+	 * String result = ac.itemsperpage("50"); Assert.assertEquals(result, "1 - 50");
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 10, enabled = true) public void items100Test() throws
+	 * InterruptedException { // extentTest = extent.startTest("items100Test");
+	 * 
+	 * ac.itemsperpage("100"); boolean cnt = ac.items100(); Assert.assertTrue(cnt);
+	 * 
+	 * }
+	 */
+
 	@Test(priority = 9, enabled = true)
-	public void items50Test() throws InterruptedException {
-		// extentTest = extent.startTest("items50Test");
-
-		// boolean cnt = ac.itemsperpage("50");
-		// Assert.assertTrue(cnt);
-
-		ac.itemsperpage("50");
-		boolean cnt = ac.items50();
-		Assert.assertTrue(cnt);
-
-		/*
-		 * String result = ac.itemsperpage("50"); Assert.assertEquals(result, "1 - 50");
-		 */
-	}
-
-	@Test(priority = 10, enabled = true)
-	public void items100Test() throws InterruptedException {
-		// extentTest = extent.startTest("items100Test");
-
-		ac.itemsperpage("100");
-		boolean cnt = ac.items100();
-		Assert.assertTrue(cnt);
-
-	}
-
-	@Test(priority = 11, enabled = true)
 	public void PaginationTestfor25Items() throws InterruptedException {
 		// extentTest = extent.startTest("PaginationTest");
 		ac.itemsperpage("25");
@@ -189,21 +184,19 @@ public class AddClientPageTest extends TestBase {
 		Assert.assertEquals(paginationtxt, "26 - 50");
 	}
 
-	@Test(priority = 12, enabled = true)
-	public void PaginationTestfor50Items() throws InterruptedException {
-		// extentTest = extent.startTest("PaginationTest");
-		ac.itemsperpage("50");
-		String paginationtxt = ac.pagination();
-		Assert.assertEquals(paginationtxt, "51 - 100");
-	}
-
-	@Test(priority = 13, enabled = true)
-	public void PaginationTestfor100Items() throws InterruptedException {
-		// extentTest = extent.startTest("PaginationTest");
-		ac.itemsperpage("100");
-		String paginationtxt = ac.pagination();
-		Assert.assertEquals(paginationtxt, "101 - 200");
-	}
+	/*
+	 * @Test(priority = 12, enabled = true) public void PaginationTestfor50Items()
+	 * throws InterruptedException { // extentTest =
+	 * extent.startTest("PaginationTest"); ac.itemsperpage("50"); String
+	 * paginationtxt = ac.pagination(); Assert.assertEquals(paginationtxt,
+	 * "51 - 100"); }
+	 * 
+	 * @Test(priority = 13, enabled = true) public void PaginationTestfor100Items()
+	 * throws InterruptedException { // extentTest =
+	 * extent.startTest("PaginationTest"); ac.itemsperpage("100"); String
+	 * paginationtxt = ac.pagination(); Assert.assertEquals(paginationtxt,
+	 * "101 - 200"); }
+	 */
 
 	@DataProvider
 	public static Object[][] getData() {

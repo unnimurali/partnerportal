@@ -2,19 +2,25 @@ package com.avlview.app.pages;
 
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.UnsupportedCommandException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.SkipException;
 
 import com.avlview.app.base.TestBase;
+import com.avlview.app.utilities.JavaScriptUtil;
 
 public class ClientsPage extends TestBase {
+
+	boolean count = false;
 
 	public ClientsPage() throws IOException {
 		// super();
@@ -63,6 +69,24 @@ public class ClientsPage extends TestBase {
 
 	@FindBy(xpath = "//span[contains(text(),'You')]")
 	WebElement txtaftersignout;
+
+	@FindBy(xpath = "//*[@id='mat-select-1']/div/div[1]")
+	WebElement itemcount;
+
+	@FindBy(xpath = "//*[@id='mat-option-3']/span")
+	WebElement itemsperpage25;
+
+	@FindBy(xpath = "//*[@id='mat-option-4']/span")
+	WebElement itemsperpage50;
+
+	@FindBy(xpath = "//*[@id='mat-option-5']/span")
+	WebElement itemsperpage100;
+
+	@FindBy(xpath = "//div[@class='mat-paginator-range-label']")
+	WebElement rangelabel;
+
+	@FindBy(xpath = "//button[2][@type='button']")
+	WebElement paginationbtn;
 
 	public String validateClientspage() {
 		System.out.println(clients.getText());
@@ -200,10 +224,140 @@ public class ClientsPage extends TestBase {
 
 		usersettings.click();
 		signout.click();
-		driver.close();
+		// driver.close();
 
 		System.out.println(txtaftersignout.getText());
 		return txtaftersignout.getText();
+	}
+
+	public void itemsperpage(String cnt) throws InterruptedException, UnsupportedCommandException {
+
+		itemcount.click();
+
+		if (cnt.equals("25")) {
+			System.out.println("25");
+			itemsperpage25.click();
+			Thread.sleep(2000);
+		} else if (cnt.equals("50")) {
+			System.out.println("50");
+			itemsperpage50.click();
+			Thread.sleep(2000);
+		} else {
+			System.out.println("Clicking 100");
+			itemsperpage100.click();
+			Thread.sleep(2000);
+		}
+
+	}
+
+	public boolean items25() throws InterruptedException {
+		int rows_count;
+		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
+
+		rows_count = rows_table.size();
+		System.out.println("Total rows in the grid is" + rows_count);
+
+		if (rows_count > 0) {
+
+			if (rows_count > 1 && rows_count <= 25) {
+				count = true;
+			} else {
+				throw new SkipException("Skipping Item25 as no data available.");
+			}
+		} else {
+			throw new SkipException("Skipping as no client data available.");
+		}
+
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+
+		Thread.sleep(3000);
+
+		return count;
+	}
+
+	public boolean items50() throws InterruptedException {
+		int rows_count;
+		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
+
+		rows_count = rows_table.size();
+		System.out.println("Total rows in the grid is" + rows_count);
+
+		if (rows_count > 0) {
+
+			if (rows_count > 25 && rows_count <= 50) {
+				count = true;
+			} else {
+				throw new SkipException("Skipping Item50 as no data available.");
+			}
+		} else {
+			throw new SkipException("Skipping as no client data available.");
+		}
+
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+
+		Thread.sleep(3000);
+
+		return count;
+	}
+
+	public boolean items100() throws InterruptedException {
+		int rows_count;
+		List<WebElement> rows_table = driver.findElements(By.xpath("//mat-row[@class='mat-row ng-star-inserted']"));
+
+		rows_count = rows_table.size();
+		System.out.println("Total rows in the grid is" + rows_count);
+
+		if (rows_count > 0) {
+
+			if (rows_count > 50 && rows_count <= 100) {
+				count = true;
+			} else {
+				throw new SkipException("Skipping Item100 as no data available.");
+			}
+		} else {
+			throw new SkipException("Skipping as no client data available.");
+		}
+
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+
+		Thread.sleep(3000);
+		return count;
+	}
+
+	public String pagination() throws InterruptedException {
+		String pagetxt;
+		String substrtxt;
+
+		// Actions actions = new Actions(driver);
+		// actions.moveToElement(itemcount).build().perform();
+
+		System.out.println(paginationbtn.isEnabled());
+
+		if (paginationbtn.isEnabled()) {
+			paginationbtn.click();
+
+			Thread.sleep(2000);
+
+			pagetxt = rangelabel.getText();
+			System.out.println(pagetxt);
+
+			int firstIndex = pagetxt.indexOf('o');
+			System.out.println("First occurrence of char 'o'" + " is found at : " + firstIndex);
+
+			substrtxt = pagetxt.substring(0, firstIndex).trim();
+			System.out.println(substrtxt);
+
+		} else {
+			throw new SkipException("Skipping there is no data available for pagination.");
+		}
+		JavaScriptUtil.scrollIntoView(rangelabel, driver);
+		JavaScriptUtil.drawBorder(rangelabel, driver);
+		Thread.sleep(3000);
+		return substrtxt;
+
 	}
 
 }
