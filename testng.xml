@@ -9,24 +9,25 @@
 	</test> -->
 
 	<listeners>
-		<!-- <listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" /> -->
+		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" /> 
 		<listener class-name="com.avlview.listners.CustomListeners" />
 		<listener class-name="com.avlview.Analyzer.MyTransformer" />
 		
 	</listeners>
 
 
-	<!-- <test name="Login Page Test">
+	 <test name="Login Page Test">
 		<classes>
 			<class name="com.avlview.app.testcases.LoginPageTest" />
 		</classes>
 	</test>
+	
 
 	<test name="ForgotPasswordPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.ForgotPasswordPageTest" />
 		</classes>
-	</test> -->
+	</test> 
 
 
 	<!-- <test name="SettingsPageTest">
@@ -82,7 +83,7 @@
 	 -->
 
 	
-
+<!-- 
 	<test name="ClientsPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.ClientsPageTest" />
@@ -94,6 +95,8 @@
 			<class name="com.avlview.app.testcases.AddClientPageTest" />
 		</classes>
 	</test>
+-->
+	
 <!-- 
 	<test name="AddVehicleTest">
 		<classes>

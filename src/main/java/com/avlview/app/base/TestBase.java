@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,24 +21,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 
 import com.avlview.app.utilities.ExcelReader;
 import com.avlview.app.utilities.TestUtil;
 import com.avlview.app.utilities.WebEventListener;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
- 
 
 public class TestBase {
 
 	public static WebDriver driver;
 
-//	public ExtentReports extent;
-//	public ExtentTest extentTest;
+	// public ExtentReports extent;
+	// public ExtentTest extentTest;
 
 	public static Properties OR = new Properties();
 	public static Properties prop = new Properties();
@@ -47,36 +41,39 @@ public class TestBase {
 	public static ExcelReader excel;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	
+
 	public ExtentReports rep = com.avlview.ExtentReporterListner.ExtentManager.getInstance();
+
 	public static ExtentTest test;
-	//public static Logger log = Logger.getLogger("devpinoyLogger");
+	// public static Logger log = Logger.getLogger("devpinoyLogger");
 
 	public static Logger log = Logger.getLogger(TestBase.class);
-	
+
 	public TestBase() throws IOException {
-		
-		//PropertyConfigurator.configure(System.getProperty("user.dir") + "\\src\\main\\resources\\log4j.properties");
-		
+
+		// PropertyConfigurator.configure(System.getProperty("user.dir") +
+		// "\\src\\main\\resources\\log4j.properties");
+
 		fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\com\\avlview\\app\\config\\config.properties");
 		prop.load(fis);
-		//log.debug("Config file loaded");
+		// log.debug("Config file loaded");
 
 		fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\com\\avlview\\app\\config\\OR.properties");
 		OR.load(fis);
-		//log.debug("Property file loaded");
+		// log.debug("Property file loaded");
 
 		excel = new ExcelReader(
 				System.getProperty("user.dir") + "\\src\\main\\java\\com\\avlview\\app\\testdata\\testdata.xlsx");
-		//log.debug("Excel file loaded");
+		// log.debug("Excel file loaded");
 	}
 
 	public static void Initialization() throws IOException {
-		
-		//PropertyConfigurator.configure(System.getProperty("user.dir") + "\\src\\main\\resources\\log4j.properties");
-		
+
+		// PropertyConfigurator.configure(System.getProperty("user.dir") +
+		// "\\src\\main\\resources\\log4j.properties");
+
 		String Browsername = prop.getProperty("browser");
 
 		if (Browsername.equals("Chrome")) {
@@ -112,41 +109,36 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.Page_timeout, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.Imp_wait, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		log.debug("Navigated to" + prop.getProperty("url") );
+		log.debug("Navigated to" + prop.getProperty("url"));
 
 	}
 
-	/*@BeforeClass
-	public void setExtent() {
-		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
-		extent.addSystemInfo("Host Name", "Murali");
-		extent.addSystemInfo("User Name", "mkrishnan");
-		extent.addSystemInfo("Environment", "QA");
+	/*
+	 * @BeforeClass public void setExtent() { extent = new
+	 * ExtentReports(System.getProperty("user.dir") +
+	 * "/test-output/ExtentReport.html", true); extent.addSystemInfo("Host Name",
+	 * "Murali"); extent.addSystemInfo("User Name", "mkrishnan");
+	 * extent.addSystemInfo("Environment", "QA");
+	 * 
+	 * }
+	 * 
+	 * @AfterClass public void endReport() { extent.flush(); extent.close(); }
+	 */
 
-	}
-
-	@AfterClass
-	public void endReport() {
-		extent.flush();
-		extent.close();
-	}*/
-	
-	public void click(String locator,WebElement element) {
+	public void click(String locator, WebElement element) {
 
 		if (locator.endsWith("_CSS")) {
-			//driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+			// driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
 			element.click();
 		} else if (locator.contains("XPATH")) {
-			//driver.findElement(By.xpath(OR.getProperty(locator))).click();
+			// driver.findElement(By.xpath(OR.getProperty(locator))).click();
 			element.click();
 		} else if (locator.endsWith("_ID")) {
 			driver.findElement(By.id(OR.getProperty(locator))).click();
 		}
-		//log.log(LogStatus.INFO, "Clicking on : " + locator);
+		// log.log(LogStatus.INFO, "Clicking on : " + locator);
 	}
-	
 
-	
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;

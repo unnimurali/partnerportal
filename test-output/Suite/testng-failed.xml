@@ -2,29 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
+    <listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG"/>
     <listener class-name="com.avlview.listners.CustomListeners"/>
     <listener class-name="com.avlview.Analyzer.MyTransformer"/>
   </listeners>
-  <test thread-count="5" name="ClientsPageTest(failed)">
+  <test thread-count="5" name="ForgotPasswordPageTest(failed)">
     <classes>
-      <class name="com.avlview.app.testcases.ClientsPageTest">
+      <class name="com.avlview.app.testcases.ForgotPasswordPageTest">
         <methods>
-          <include name="validateTotalTabsTest"/>
-          <include name="setup"/>
+          <include name="validateInvaliduserClickTest"/>
+          <include name="validateBacktoLoginExistTest"/>
+          <include name="validateForgotPasswordPageExistTest"/>
           <include name="teardown"/>
-        </methods>
-      </class> <!-- com.avlview.app.testcases.ClientsPageTest -->
-    </classes>
-  </test> <!-- ClientsPageTest(failed) -->
-  <test thread-count="5" name="AddClientPageTest(failed)">
-    <classes>
-      <class name="com.avlview.app.testcases.AddClientPageTest">
-        <methods>
-          <include name="NoClientExistTemplateTest"/>
           <include name="setup"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.AddClientPageTest -->
+      </class> <!-- com.avlview.app.testcases.ForgotPasswordPageTest -->
     </classes>
-  </test> <!-- AddClientPageTest(failed) -->
+  </test> <!-- ForgotPasswordPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

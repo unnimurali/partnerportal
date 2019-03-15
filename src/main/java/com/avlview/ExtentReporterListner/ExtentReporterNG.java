@@ -1,6 +1,5 @@
 package com.avlview.ExtentReporterListner;
 
-import java.io.File;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -22,7 +21,9 @@ public class ExtentReporterNG implements IReporter {
 	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
+		// extent = new ExtentReports(outputDirectory + File.separator + "Extent.html",
+		// true);
+		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();

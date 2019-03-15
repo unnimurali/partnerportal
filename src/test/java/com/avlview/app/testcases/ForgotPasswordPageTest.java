@@ -70,7 +70,7 @@ public class ForgotPasswordPageTest extends TestBase {
 		Assert.assertEquals(Backtl, "Back to Login");
 	}
 
-	@Test(priority = 5, enabled = true)
+	@Test(priority = 5, enabled = false)
 	public void validateBacktoLoginClickTest() throws IOException, InterruptedException {
 		// extentTest = extent.startTest("validateBacktoLoginClickTest");
 		fp = lp.ForgotPassword();
@@ -79,7 +79,7 @@ public class ForgotPasswordPageTest extends TestBase {
 		Assert.assertEquals(validateloginpage, "Sign in");
 	}
 
-	@Test(priority = 6, enabled = true)
+	@Test(priority = 6, enabled = false)
 	public void validateNouserClickTest() throws IOException, InterruptedException {
 		// extentTest = extent.startTest("validateNouserClickTest");
 		fp = lp.ForgotPassword();
@@ -97,7 +97,7 @@ public class ForgotPasswordPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 8, enabled = true)
+	@Test(priority = 8, enabled = false)
 	public void validateValiduserClickTest() throws IOException, InterruptedException {
 		// extentTest = extent.startTest("validateValiduserClickTest");
 		fp = lp.ForgotPassword();

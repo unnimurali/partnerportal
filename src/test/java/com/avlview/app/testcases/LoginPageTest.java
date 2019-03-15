@@ -77,7 +77,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(Rememberme, "Remember me");
 	}
 
-	@Test(priority = 5, enabled = true)
+	@Test(priority = 5, enabled = false)
 	public void validateLanguageExistTest() {
 
 		// extentTest = extent.startTest("validateLanguageExistTest");
@@ -85,7 +85,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(Language, "English");
 	}
 
-	@Test(priority = 6, enabled = true)
+	@Test(priority = 6, enabled = false)
 	public void forgotpasswordclick() throws IOException, InterruptedException {
 		// extentTest = extent.startTest("forgotpasswordclick");
 		fp = lp.ForgotPassword();
@@ -95,7 +95,7 @@ public class LoginPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 7, enabled = true)
+	@Test(priority = 7, enabled = false)
 	public void loginclickWithInvaliduser() throws InterruptedException {
 		// extentTest = extent.startTest("loginclickWithInvaliduser");
 		String valmsg = lp.validationMessage(prop.getProperty("invaliduname"), prop.getProperty("invalidpwd"));
@@ -103,7 +103,7 @@ public class LoginPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 8, enabled = true)
+	@Test(priority = 8, enabled = false)
 	public void loginclick() throws IOException {
 		// extentTest = extent.startTest("loginclick");
 		cp = lp.login(prop.getProperty("uname"), prop.getProperty("pwd"));
