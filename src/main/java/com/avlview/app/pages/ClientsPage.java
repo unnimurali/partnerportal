@@ -360,4 +360,21 @@ public class ClientsPage extends TestBase {
 
 	}
 
+	public ClientDetailsPage clientclick() throws IOException, InterruptedException {
+		// TODO Auto-generated method stub
+
+		search.click();
+		search.sendKeys(prop.getProperty("searchtxt"));
+		search.sendKeys(Keys.ENTER);
+
+		String clientname = prop.getProperty("searchtxt");
+		Thread.sleep(2000);
+
+		WebElement cn = driver.findElement(By.xpath("//a[@title='" + clientname + "']"));
+
+		cn.click();
+
+		return new ClientDetailsPage();
+	}
+
 }

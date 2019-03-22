@@ -1,8 +1,4 @@
-2019-03-15 16:20:12,612 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: standard
-2019-03-15 16:20:12,637 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2019-03-15 16:20:12,641 DEBUG [main] PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://chromedriver.storage.googleapis.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
-2019-03-15 16:20:12,687 DEBUG [main] PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://chromedriver.storage.googleapis.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-2019-03-15 16:20:12,691 DEBUG [main] MainClientExec:235 - Opening connection {s}->https://chromedriver.storage.googleapis.com:443
-2019-03-15 16:20:24,039 DEBUG [main] DefaultManagedHttpClientConnection:96 - http-outgoing-0: Shutdown connection
-2019-03-15 16:20:24,039 DEBUG [main] MainClientExec:129 - Connection discarded
-2019-03-15 16:20:24,039 DEBUG [main] PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://chromedriver.storage.googleapis.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-22 14:39:03,487 DEBUG [main] TestBase:93 - Chrome launched
+2019-03-22 14:39:14,172 DEBUG [main] TestBase:112 - Navigated tohttps://app.avlview.com
+2019-03-22 14:40:08,904 DEBUG [main] TestBase:93 - Chrome launched
+2019-03-22 14:40:23,203 DEBUG [main] TestBase:112 - Navigated tohttps://app.avlview.com
