@@ -1,9 +1,15 @@
 package com.avlview.app.pages;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,6 +21,7 @@ import com.avlview.app.base.TestBase;
 public class ClientDetailsPage extends TestBase {
 
 	WebDriverWait wait;
+	ArrayList<String> ar = new ArrayList<String>();
 
 	public ClientDetailsPage() throws IOException {
 		super();
@@ -42,6 +49,18 @@ public class ClientDetailsPage extends TestBase {
 
 	@FindBy(xpath = "//div[contains(text(),'Vehicle(s)')]/../div[1]")
 	WebElement vehiclesummarycount;
+
+	@FindBy(xpath = "//mat-icon[@class='search_btn mat-icon material-icons']")
+	WebElement vehiclesearchicon;
+
+	@FindBy(xpath = "//button[@title='Download as .xls']")
+	WebElement downloadicon;
+
+	@FindBy(xpath = "//span[@class='fnt_18 padd_rgt_5 black_txt']")
+	WebElement searchedresult;
+
+	@FindBy(xpath = "//input[@placeholder='Type in Vehicle name and press Enter key..']")
+	WebElement vehicleseach;
 
 	// div[@class='default_row']
 
@@ -118,6 +137,77 @@ public class ClientDetailsPage extends TestBase {
 			throw new SkipException("No Vehicle data's are avaialble so skipping the testcase.");
 		}
 		return vehcntstatus;
+
+	}
+
+	public boolean validateStatus() {
+		boolean status = false;
+
+		List<WebElement> rows_table = driver.findElements(
+				By.xpath("//div[@class='margin_left_12 fl']/div[@class='fnt-13 grey04_txt margin_top_ms1']"));
+		int rows_count = rows_table.size();
+		System.out.println("Total rows in the grid is" + rows_count);
+
+		String before_xpath = "//div[@class='ng-star-inserted']/div[";
+		String after_xpath = "]/div[@class='fnt-13 grey04_txt margin_top_ms1']";
+
+		for (int i = 2; i <= rows_count + 1; i++) {
+			String items = driver.findElement(By.xpath(before_xpath + i + after_xpath)).getText();
+			// System.out.println("Irems are" + items);
+			ar.add(items);
+		}
+
+		HashMap<String, ArrayList<String>> hm = new HashMap<String, ArrayList<String>>();
+		hm.put("Status", ar);
+
+		String expected = "[Moving, Stopped, Idling, Disconnected]";
+
+		Set<String> keys = hm.keySet();
+		for (String key : keys) {
+			// System.out.println("Value of " + key + " is: " + hm.get(key));
+			String actual = hm.get(key).toString();
+			// System.out.println(a);
+			// System.out.println(b);
+			status = actual.equals(expected);
+
+		}
+
+		return status;
+
+	}
+
+	public boolean validateSeachButton() {
+		WebDriverWait wait = new WebDriverWait(driver, 60); // wait for 5 seconds
+		wait.until(ExpectedConditions.visibilityOf(vehiclesearchicon));
+		System.out.println(vehiclesearchicon.isDisplayed());
+		return vehiclesearchicon.isDisplayed();
+	}
+
+	public boolean validateVehicleSeach() throws InterruptedException {
+
+		boolean searchstatus = false;
+		System.out.println(vehiclesearchicon.isDisplayed());
+		if (vehiclesearchicon.isDisplayed()) {
+
+			Thread.sleep(2000);
+			System.out.println("inside");
+			// vehiclesearchicon.click();
+
+			Actions actions = new Actions(driver);
+			actions.moveToElement(vehiclesearchicon).click().build().perform();
+
+			String texttosearch = prop.getProperty("vehicletosearch");
+			vehicleseach.sendKeys(texttosearch);
+
+			vehicleseach.sendKeys(Keys.ENTER);
+
+			String actual = searchedresult.getText();
+			String expected = texttosearch;
+
+			searchstatus = actual.equals(expected);
+
+		}
+		return searchstatus;
 
 	}
 

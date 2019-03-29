@@ -38,7 +38,7 @@ public class ClientDetailsTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void TemplateTest() throws IOException, InterruptedException {
 
 		// extentTest = extent.startTest("TemplateTest");
@@ -78,12 +78,37 @@ public class ClientDetailsTest extends TestBase {
 		Assert.assertEquals(validatemenuitems, 2);
 	}
 
-	@Test(priority = 5, enabled = true)
+	@Test(priority = 5, enabled = false)
 	public void validateVehicleCountTest() throws InterruptedException, IOException {
 		// extentTest = extent.startTest("validatePartnerLogoExistTest");
 		boolean countstatus = cd.validateTotalVehicleCount();
 		System.out.println(countstatus);
 		Assert.assertTrue(countstatus);
+
+	}
+
+	@Test(priority = 6, enabled = false)
+	public void validateVehicleStatusTest() throws InterruptedException, IOException {
+		// extentTest = extent.startTest("validatePartnerLogoExistTest");
+		boolean status = cd.validateStatus();
+		System.out.println(status);
+		Assert.assertTrue(status);
+
+	}
+
+	@Test(priority = 7, enabled = false)
+	public void validateSearchExistTest() throws InterruptedException {
+		// extentTest = extent.startTest("validatePartnerLogoExistTest");
+		boolean validateSearchn = cd.validateSeachButton();
+		Assert.assertTrue(validateSearchn);
+
+	}
+
+	@Test(priority = 8, enabled = true)
+	public void validateSearchTest() throws InterruptedException {
+		// extentTest = extent.startTest("validatePartnerLogoExistTest");
+		boolean validateSearch = cd.validateVehicleSeach();
+		Assert.assertTrue(validateSearch);
 
 	}
 
