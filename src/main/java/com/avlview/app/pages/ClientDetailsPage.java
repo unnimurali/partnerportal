@@ -1,5 +1,6 @@
 package com.avlview.app.pages;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +15,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.SkipException;
 
 import com.avlview.app.base.TestBase;
@@ -55,6 +57,9 @@ public class ClientDetailsPage extends TestBase {
 
 	@FindBy(xpath = "//button[@title='Download as .xls']")
 	WebElement downloadicon;
+
+	@FindBy(xpath = "//button[@class='settings_drop_icon margin_left_14 mat-button ng-star-inserted']")
+	WebElement settingsicon;
 
 	@FindBy(xpath = "//span[@class='fnt_18 padd_rgt_5 black_txt']")
 	WebElement searchedresult;
@@ -208,6 +213,76 @@ public class ClientDetailsPage extends TestBase {
 
 		}
 		return searchstatus;
+
+	}
+
+	public boolean validateExcelDownload() throws InterruptedException {
+
+		boolean download = false;
+		System.out.println(downloadicon.isDisplayed());
+
+		if (downloadicon.isDisplayed()) {
+
+			downloadicon.click();
+			Thread.sleep(2000);
+			File listOfFiles[] = folder.listFiles();
+			Assert.assertTrue(listOfFiles.length > 0);
+
+			for (File file : listOfFiles) {
+				// make sure that downloaded file is not empty
+				Assert.assertTrue(file.length() > 0);
+				download = true;
+			}
+
+			for (File file : folder.listFiles()) {
+				file.delete();
+			}
+			folder.delete();
+
+		}
+		return download;
+
+	}
+
+	public boolean validateSettingsIconclick() {
+		int menuitemcnt = 0;
+		boolean status = false;
+		System.out.println(settingsicon.isDisplayed());
+		if (settingsicon.isDisplayed()) {
+			settingsicon.click();
+			List<WebElement> rows_table = driver.findElements(By.xpath("//button[@role='menuitem']"));
+			System.out.println(rows_table);
+			menuitemcnt = rows_table.size();
+			System.out.println(menuitemcnt);
+
+			String before_xpath = "//div[@class='mat-menu-content ng-trigger ng-trigger-fadeInItems']/button[";
+			String after_xpath = "]";
+
+			for (int i = 1; i <= menuitemcnt; i++) {
+				String items = driver.findElement(By.xpath(before_xpath + i + after_xpath)).getText();
+				// System.out.println("Irems are" + items);
+				ar.add(items);
+				System.out.println(ar);
+			}
+
+			HashMap<String, ArrayList<String>> hm = new HashMap<String, ArrayList<String>>();
+			hm.put("Status", ar);
+
+			String expected = "[Remote Login, Invite to Join, View Subscriptions]";
+
+			Set<String> keys = hm.keySet();
+			for (String key : keys) {
+				// System.out.println("Value of " + key + " is: " + hm.get(key));
+				String actual = hm.get(key).toString();
+				// System.out.println(a);
+				// System.out.println(b);
+				status = actual.equals(expected);
+
+			}
+
+		}
+
+		return status;
 
 	}
 

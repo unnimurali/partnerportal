@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -31,6 +32,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 public class TestBase {
 
 	public static WebDriver driver;
+	public static File folder;
 
 	// public ExtentReports extent;
 	// public ExtentTest extentTest;
@@ -74,6 +76,9 @@ public class TestBase {
 		// PropertyConfigurator.configure(System.getProperty("user.dir") +
 		// "\\src\\main\\resources\\log4j.properties");
 
+		folder = new File(UUID.randomUUID().toString());
+		folder.mkdir();
+
 		String Browsername = prop.getProperty("browser");
 
 		if (Browsername.equals("Chrome")) {
@@ -81,15 +86,23 @@ public class TestBase {
 					System.getProperty("user.dir") + "\\src\\main\\resources\\drivers\\chromedriver.exe");
 
 			Map<String, Object> prefs = new HashMap<String, Object>();
+
 			prefs.put("profile.default_content_setting_values.notifications", 2);
 			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
+
+			prefs.put("profile.default_content_settings.popups", 0);
+			prefs.put("download.default_directory", folder.getAbsolutePath());
+
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", prefs);
 			options.addArguments("--disable-extensions");
 			options.addArguments("--disable-infobars");
 
+			options.setCapability(ChromeOptions.CAPABILITY, options);
+
 			driver = new ChromeDriver(options);
+
 			log.debug("Chrome launched");
 			// driver = new ChromeDriver();
 		} else if (Browsername.equals("FF")) {

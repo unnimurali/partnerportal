@@ -97,18 +97,34 @@ public class ClientDetailsTest extends TestBase {
 	}
 
 	@Test(priority = 7, enabled = false)
-	public void validateSearchExistTest() throws InterruptedException {
+	public void validateSearchandDownloadExistTest() throws InterruptedException {
 		// extentTest = extent.startTest("validatePartnerLogoExistTest");
 		boolean validateSearchn = cd.validateSeachButton();
 		Assert.assertTrue(validateSearchn);
 
 	}
 
-	@Test(priority = 8, enabled = true)
+	@Test(priority = 8, enabled = false)
 	public void validateSearchTest() throws InterruptedException {
 		// extentTest = extent.startTest("validatePartnerLogoExistTest");
 		boolean validateSearch = cd.validateVehicleSeach();
 		Assert.assertTrue(validateSearch);
+
+	}
+
+	@Test(priority = 9, enabled = false)
+	public void validateDownloadTest() throws InterruptedException {
+		// extentTest = extent.startTest("validatePartnerLogoExistTest");
+		boolean validateDownload = cd.validateExcelDownload();
+		Assert.assertTrue(validateDownload);
+
+	}
+
+	@Test(priority = 10, enabled = true)
+	public void validateSettingsClickTest() throws InterruptedException {
+		// extentTest = extent.startTest("validatePartnerLogoExistTest");
+		boolean settingsicon = cd.validateSettingsIconclick();
+		Assert.assertTrue(settingsicon);
 
 	}
 
