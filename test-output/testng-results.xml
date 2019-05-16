@@ -1,32 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="10" total="11" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69012" started-at="2019-04-01T10:40:58Z" finished-at="2019-04-01T10:42:07Z">
+  <suite name="Suite" duration-ms="112995" started-at="2019-05-16T10:29:22Z" finished-at="2019-05-16T10:31:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69012" started-at="2019-04-01T10:40:58Z" finished-at="2019-04-01T10:42:07Z">
-      <class name="com.avlview.app.testcases.ClientDetailsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.app.testcases.ClientDetailsTest@1cdc6d]" name="setup" is-config="true" duration-ms="64732" started-at="2019-04-01T10:40:58Z" finished-at="2019-04-01T10:42:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateSettingsClickTest()[pri:10, instance:com.avlview.app.testcases.ClientDetailsTest@1cdc6d]" name="validateSettingsClickTest" duration-ms="3045" started-at="2019-04-01T10:42:03Z" finished-at="2019-04-01T10:42:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateSettingsClickTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.ClientDetailsTest@1cdc6d]" name="teardown" is-config="true" duration-ms="1170" started-at="2019-04-01T10:42:06Z" finished-at="2019-04-01T10:42:07Z">
+    <test name="Test" duration-ms="112995" started-at="2019-05-16T10:29:22Z" finished-at="2019-05-16T10:31:15Z">
+      <class name="com.avlview.app.testcases.LoginPageTest2">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="59036" started-at="2019-05-16T10:29:22Z" finished-at="2019-05-16T10:30:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateSettingsClickTest status=SUCCESS method=ClientDetailsTest.validateSettingsClickTest()[pri:10, instance:com.avlview.app.testcases.ClientDetailsTest@1cdc6d] output={null}]]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateLoginPageExistTest" duration-ms="214" started-at="2019-05-16T10:30:21Z" finished-at="2019-05-16T10:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="414" started-at="2019-05-16T10:30:21Z" finished-at="2019-05-16T10:30:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLoginPageExistTest status=SUCCESS method=LoginPageTest2.validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.avlview.app.testcases.ClientDetailsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="18000" started-at="2019-05-16T10:30:21Z" finished-at="2019-05-16T10:30:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateClientLogoExistTest" duration-ms="1428" started-at="2019-05-16T10:30:39Z" finished-at="2019-05-16T10:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClientLogoExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="254" started-at="2019-05-16T10:30:41Z" finished-at="2019-05-16T10:30:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateClientLogoExistTest status=SUCCESS method=LoginPageTest2.validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="15052" started-at="2019-05-16T10:30:41Z" finished-at="2019-05-16T10:30:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateApplogoExistTest" duration-ms="118" started-at="2019-05-16T10:30:56Z" finished-at="2019-05-16T10:30:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplogoExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="237" started-at="2019-05-16T10:30:56Z" finished-at="2019-05-16T10:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateApplogoExistTest status=SUCCESS method=LoginPageTest2.validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="16116" started-at="2019-05-16T10:30:57Z" finished-at="2019-05-16T10:31:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateRemembermeExistTest()[pri:4, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateRemembermeExistTest" duration-ms="1454" started-at="2019-05-16T10:31:13Z" finished-at="2019-05-16T10:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRemembermeExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="551" started-at="2019-05-16T10:31:14Z" finished-at="2019-05-16T10:31:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateRemembermeExistTest status=SUCCESS method=LoginPageTest2.validateRemembermeExistTest()[pri:4, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.avlview.app.testcases.LoginPageTest2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

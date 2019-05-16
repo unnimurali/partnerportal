@@ -1,43 +1,44 @@
 package com.avlview.app.testcases;
 
 import java.io.IOException;
-import java.lang.reflect.Method;
 
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.avlview.app.base.TestBase;
+import com.avlview.app.base.TestBase2;
 import com.avlview.app.pages.ClientsPage;
 import com.avlview.app.pages.ForgotPasswordPage;
-import com.avlview.app.pages.LoginPage;
+import com.avlview.app.pages.LoginPage2;
 
-public class LoginPageTest extends TestBase {
+public class LoginPageTest2 extends TestBase2 {
 
 	// public ExtentReports extent;
 	// public static ExtentTest extentTest;
 
-	LoginPage lp;
+	LoginPage2 lp;
 	ClientsPage cp;
 	ForgotPasswordPage fp;
 
-	public LoginPageTest() throws IOException {
+	public LoginPageTest2() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
+	@Parameters("browsername")
 	@BeforeMethod
-	public void setup(Method method) throws IOException {
+	public void setup(String bname) throws IOException {
 		// extentTest = ExtentManager.getInstance().startTest((this.getClass().getName()
 		// + "::" + method.getName()), method.getName());
 
-		Initialization();
+		openbrowsers(bname);
 
-		lp = new LoginPage();
-		cp = new ClientsPage();
-		fp = new ForgotPasswordPage();
+		lp = new LoginPage2();
+		// cp = new ClientsPage();
+		// fp = new ForgotPasswordPage();
 
 	}
 
@@ -140,7 +141,7 @@ public class LoginPageTest extends TestBase {
 
 		// ExtentManager.getInstance().endTest(extentTest);
 
-		driver.quit();
+		getdriver().quit();
 		log.info("Execution comleted");
 
 	}

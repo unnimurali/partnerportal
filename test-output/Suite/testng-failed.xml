@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG"/>
-    <listener class-name="com.avlview.listners.CustomListeners"/>
-    <listener class-name="com.avlview.Analyzer.MyTransformer"/>
-  </listeners>
-  <test thread-count="5" name="ForgotPasswordPageTest(failed)">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="10" name="Test(failed)" parallel="methods">
+    <parameter name="browsername" value="chrome"/>
     <classes>
-      <class name="com.avlview.app.testcases.ForgotPasswordPageTest">
+      <class name="com.avlview.app.testcases.LoginPageTest2">
         <methods>
-          <include name="validateInvaliduserClickTest"/>
-          <include name="validateBacktoLoginExistTest"/>
-          <include name="validateForgotPasswordPageExistTest"/>
-          <include name="teardown"/>
+          <include name="validateClientLogoExistTest"/>
+          <include name="validateLoginPageExistTest"/>
           <include name="setup"/>
+          <include name="validateApplogoExistTest"/>
+          <include name="validateRemembermeExistTest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.ForgotPasswordPageTest -->
+      </class> <!-- com.avlview.app.testcases.LoginPageTest2 -->
     </classes>
-  </test> <!-- ForgotPasswordPageTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

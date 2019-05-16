@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="10" name="Test(failed)" parallel="methods">
+    <parameter name="browsername" value="chrome"/>
     <classes>
-      <class name="com.avlview.app.testcases.ClientDetailsTest">
+      <class name="com.avlview.app.testcases.LoginPageTest2">
         <methods>
-          <include name="validateSettingsClickTest"/>
+          <include name="validateClientLogoExistTest"/>
+          <include name="validateLoginPageExistTest"/>
           <include name="setup"/>
+          <include name="validateApplogoExistTest"/>
+          <include name="validateRemembermeExistTest"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.ClientDetailsTest -->
+      </class> <!-- com.avlview.app.testcases.LoginPageTest2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

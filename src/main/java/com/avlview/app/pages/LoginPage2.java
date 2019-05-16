@@ -10,15 +10,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.avlview.app.base.TestBase;
+import com.avlview.app.base.TestBase2;
 
-public class LoginPage extends TestBase {
+public class LoginPage2 extends TestBase2 {
 
 	public static WebDriverWait wait;
 
 	// initializing the objects
-	public LoginPage() throws IOException {
-		PageFactory.initElements(driver, this);
+	public LoginPage2() throws IOException {
+		PageFactory.initElements(getdriver(), this);
 
 	}
 
@@ -66,7 +66,7 @@ public class LoginPage extends TestBase {
 
 	public boolean validateClientLogo() throws InterruptedException {
 		// System.out.println(Clientlogo);
-		wait = new WebDriverWait(driver, 30); // wait for 5 seconds
+		wait = new WebDriverWait(getdriver(), 30); // wait for 5 seconds
 		wait.until(ExpectedConditions.visibilityOf(Clientlogo));
 
 		System.out.println(Clientlogo.isDisplayed());
@@ -74,7 +74,7 @@ public class LoginPage extends TestBase {
 	}
 
 	public boolean validateApplogo() {
-		wait = new WebDriverWait(driver, 30); // wait for 5 seconds
+		wait = new WebDriverWait(getdriver(), 30); // wait for 5 seconds
 		wait.until(ExpectedConditions.visibilityOf(Applogo));
 
 		System.out.println(Applogo.isDisplayed());
@@ -117,7 +117,7 @@ public class LoginPage extends TestBase {
 		signinBtn.sendKeys(Keys.ENTER);
 		int count;
 
-		count = driver.findElements(By.xpath("//span[2][contains(text(),'Client')]")).size();
+		count = getdriver().findElements(By.xpath("//span[2][contains(text(),'Client')]")).size();
 
 		System.out.println(count);
 

@@ -1,2 +1,10 @@
-2019-04-01 16:11:03,439 DEBUG [main] TestBase:106 - Chrome launched
-2019-04-01 16:11:37,630 DEBUG [main] TestBase:125 - Navigated tohttps://app.avlview.com
+2019-05-16 16:00:21,033 DEBUG [TestNG-test=Test-1] TestBase2:127 - Navigated tohttps://app.avlview.com
+2019-05-16 16:00:21,335  INFO [TestNG-test=Test-1] TestBase2:48 - Inside validateLoginPageExistTest
+2019-05-16 16:00:21,537  INFO [TestNG-test=Test-1] TestBase2:53 - Sucessfully executed validateLoginPageExistTest
+2019-05-16 16:00:21,954  INFO [TestNG-test=Test-1] TestBase2:145 - Execution comleted
+2019-05-16 16:00:39,880 DEBUG [TestNG-test=Test-2] TestBase2:127 - Navigated tohttps://app.avlview.com
+2019-05-16 16:00:41,663  INFO [TestNG-test=Test-2] TestBase2:145 - Execution comleted
+2019-05-16 16:00:56,622 DEBUG [TestNG-test=Test-3] TestBase2:127 - Navigated tohttps://app.avlview.com
+2019-05-16 16:00:57,092  INFO [TestNG-test=Test-3] TestBase2:145 - Execution comleted
+2019-05-16 16:01:13,067 DEBUG [TestNG-test=Test-4] TestBase2:127 - Navigated tohttps://app.avlview.com
+2019-05-16 16:01:15,219  INFO [TestNG-test=Test-4] TestBase2:145 - Execution comleted

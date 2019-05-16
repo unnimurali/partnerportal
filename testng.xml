@@ -23,11 +23,11 @@
 	</test>
 	
 
-	<test name="ForgotPasswordPageTest">
+	<!-- <test name="ForgotPasswordPageTest">
 		<classes>
 			<class name="com.avlview.app.testcases.ForgotPasswordPageTest" />
 		</classes>
-	</test> 
+	</test>  -->
 
 
 	<!-- <test name="SettingsPageTest">
