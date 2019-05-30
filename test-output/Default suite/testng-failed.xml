@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.avlview.app.testcases.ClientDetailsTest">
+      <class name="com.avlview.app.testcases.HomePageTest">
         <methods>
-          <include name="validateSettingsClickTest"/>
+          <include name="validateHomePageExistTest"/>
           <include name="setup"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- com.avlview.app.testcases.ClientDetailsTest -->
+      </class> <!-- com.avlview.app.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

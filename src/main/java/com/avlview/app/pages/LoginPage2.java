@@ -10,9 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.avlview.app.base.TestBase2;
+import com.avlview.app.base.TestBaseGridTesting;
 
-public class LoginPage2 extends TestBase2 {
+public class LoginPage2 extends TestBaseGridTesting {
 
 	public static WebDriverWait wait;
 
@@ -33,7 +33,7 @@ public class LoginPage2 extends TestBase2 {
 	@FindBy(xpath = "//input[@type='submit']")
 	WebElement signinBtn;
 
-	@FindBy(xpath = "//span[contains(text(),'Invalid')]")
+	@FindBy(xpath = "//span[contains(text(),'You have')]")
 	WebElement Errormsg;
 
 	@FindBy(xpath = "//span[text()='Sign in']")
@@ -98,10 +98,11 @@ public class LoginPage2 extends TestBase2 {
 
 	public String validationMessage(String uname1, String pwd1) throws InterruptedException {
 		username.sendKeys(uname1);
+		// Thread.sleep(3000);
 		password.sendKeys(pwd1);
 		// Thread.sleep(3000);
 		signinBtn.click();
-		// Thread.sleep(3000);
+		Thread.sleep(10000);
 		System.out.println(Errormsg.getText());
 		return Errormsg.getText();
 	}
@@ -111,22 +112,43 @@ public class LoginPage2 extends TestBase2 {
 		return new ForgotPasswordPage();
 	}
 
-	public ClientsPage login(String uname, String pwd) throws IOException {
+	/*
+	 * public ClientsPage2 login(String uname, String pwd) throws IOException {
+	 * username.sendKeys(uname); password.sendKeys(pwd);
+	 * signinBtn.sendKeys(Keys.ENTER); int count;
+	 * 
+	 * count =
+	 * getdriver().findElements(By.xpath("//span[2][contains(text(),'Client')]")).
+	 * size();
+	 * 
+	 * System.out.println(count);
+	 * 
+	 * if (count == 0) { // Assert.fail("login failed"); return null;
+	 * 
+	 * } else { return new ClientsPage2(); }
+	 * 
+	 * }
+	 */
+
+	public HomePage login(String uname, String pwd) throws IOException {
 		username.sendKeys(uname);
 		password.sendKeys(pwd);
 		signinBtn.sendKeys(Keys.ENTER);
 		int count;
 
-		count = getdriver().findElements(By.xpath("//span[2][contains(text(),'Client')]")).size();
+		WebDriverWait wait = new WebDriverWait(getdriver(), 60); // wait for 5 seconds
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Version')]")));
 
-		System.out.println(count);
+		count = getdriver().findElements(By.xpath("//span[contains(text(),'Version')]")).size();
+
+		System.out.println("Count is " + count);
 
 		if (count == 0) {
 			// Assert.fail("login failed");
 			return null;
 
 		} else {
-			return new ClientsPage();
+			return new HomePage();
 		}
 
 	}

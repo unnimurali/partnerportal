@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\2018\Automation\AVLView\partnerportal\testngparallel.xml</span>
+                    <span>C:\2018\Automation\AVLView\partnerportal\parallelusingthreadlocal.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,  8 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="loginclickWithInvaliduser">loginclickWithInvaliduser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="loginclick">loginclick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="loginclickWithInvaliduser">loginclickWithInvaliduser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateApplogoExistTest">validateApplogoExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateClientLogoExistTest">validateClientLogoExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateLanguageExistTest">validateLanguageExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateLoginPageExistTest">validateLoginPageExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateLoginPageExistTest">validateLoginPageExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateRemembermeExistTest">validateRemembermeExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +163,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="loginclick">loginclick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateApplogoExistTest">validateApplogoExistTest</a> <!-- method navigator-link -->
@@ -112,7 +180,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateLoginPageExistTest">validateLoginPageExistTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avlview.app.testcases.LoginPageTest2" hash-for-method="validateLanguageExistTest">validateLanguageExistTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,12 +200,180 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.avlview.app.testcases.LoginPageTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginclickWithInvaliduser">
+                  </a> <!-- loginclickWithInvaliduser -->
+                  <span class="method-name">loginclickWithInvaliduser</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Invalid username/password, please try again!] but found [You have entered an invalid username or password.]
+	at com.avlview.app.testcases.LoginPageTest2.loginclickWithInvaliduser(LoginPageTest2.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.avlview.app.testcases.LoginPageTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginclick">
+                  </a> <!-- loginclick -->
+                  <span class="method-name">loginclick</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginclickWithInvaliduser">
+                  </a> <!-- loginclickWithInvaliduser -->
+                  <span class="method-name">loginclickWithInvaliduser</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateApplogoExistTest">
+                  </a> <!-- validateApplogoExistTest -->
+                  <span class="method-name">validateApplogoExistTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateClientLogoExistTest">
+                  </a> <!-- validateClientLogoExistTest -->
+                  <span class="method-name">validateClientLogoExistTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLanguageExistTest">
+                  </a> <!-- validateLanguageExistTest -->
+                  <span class="method-name">validateLanguageExistTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginPageExistTest">
+                  </a> <!-- validateLoginPageExistTest -->
+                  <span class="method-name">validateLoginPageExistTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginPageExistTest">
+                  </a> <!-- validateLoginPageExistTest -->
+                  <span class="method-name">validateLoginPageExistTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timeout loading page after 50000ms
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;MKRISHNAN&apos;, ip: &apos;192.168.0.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190516215225, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 8636, moz:profile: C:\Users\mkrishnan\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8eea8161-a0e6-49d4-8799-514...}
+Session ID: 8eea8161-a0e6-49d4-8799-5146bd4b738e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:123)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRemembermeExistTest">
+                  </a> <!-- validateRemembermeExistTest -->
+                  <span class="method-name">validateRemembermeExistTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+	at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.avlview.app.testcases.LoginPageTest2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginclick">
+                  </a> <!-- loginclick -->
+                  <span class="method-name">loginclick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validateApplogoExistTest">
@@ -154,9 +390,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateLoginPageExistTest">
-                  </a> <!-- validateLoginPageExistTest -->
-                  <span class="method-name">validateLoginPageExistTest</span>
+                  <a name="validateLanguageExistTest">
+                  </a> <!-- validateLanguageExistTest -->
+                  <span class="method-name">validateLanguageExistTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -171,19 +407,25 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\2018\Automation\AVLView\partnerportal\testngparallel.xml</span>
+            <span class="header-content">C:\2018\Automation\AVLView\partnerportal\parallelusingthreadlocal.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;10&quot; name=&quot;Test&quot; parallel=&quot;methods&quot;&gt;
-    &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;15&quot; name=&quot;Test&quot; parallel=&quot;methods&quot; group-by-instances=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;browsername&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.avlview.app.testcases.LoginPageTest2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test thread-count=&quot;15&quot; name=&quot;Test1&quot; parallel=&quot;methods&quot; group-by-instances=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;browsername&quot; value=&quot;ff&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.avlview.app.testcases.LoginPageTest2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,6 +438,9 @@
             <ul>
               <li>
                 <span class="test-name">Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,28 +466,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateRemembermeExistTest')
+data.setCell(0, 1, 'loginclick')
 data.setCell(0, 2, 'com.avlview.app.testcases.LoginPageTest2')
-data.setCell(0, 3, 1454);
+data.setCell(0, 3, 46390);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateClientLogoExistTest')
+data.setCell(1, 1, 'loginclickWithInvaliduser')
 data.setCell(1, 2, 'com.avlview.app.testcases.LoginPageTest2')
-data.setCell(1, 3, 1428);
+data.setCell(1, 3, 10935);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateLoginPageExistTest')
+data.setCell(2, 1, 'validateClientLogoExistTest')
 data.setCell(2, 2, 'com.avlview.app.testcases.LoginPageTest2')
-data.setCell(2, 3, 214);
+data.setCell(2, 3, 2542);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateApplogoExistTest')
+data.setCell(3, 1, 'validateRemembermeExistTest')
 data.setCell(3, 2, 'com.avlview.app.testcases.LoginPageTest2')
-data.setCell(3, 3, 118);
+data.setCell(3, 3, 1710);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateApplogoExistTest')
+data.setCell(4, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(4, 3, 385);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateLanguageExistTest')
+data.setCell(5, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(5, 3, 134);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateRemembermeExistTest')
+data.setCell(6, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateClientLogoExistTest')
+data.setCell(7, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateApplogoExistTest')
+data.setCell(8, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateLoginPageExistTest')
+data.setCell(9, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateLanguageExistTest')
+data.setCell(10, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginclick')
+data.setCell(11, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginclickWithInvaliduser')
+data.setCell(12, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateLoginPageExistTest')
+data.setCell(13, 2, 'com.avlview.app.testcases.LoginPageTest2')
+data.setCell(13, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,19 +542,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.avlview.app.testcases.LoginPageTest2</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginclick</span>
-                <br/>
                 <span class="ignored-method-name">forgotpasswordclick</span>
                 <br/>
-                <span class="ignored-method-name">validateLanguageExistTest</span>
-                <br/>
-                <span class="ignored-method-name">loginclickWithInvaliduser</span>
+                <span class="ignored-method-name">forgotpasswordclick</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -282,53 +563,155 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.avlview.app.testcases.LoginPageTest2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
+              <div class="test-method">
+                <span class="method-name">validateRemembermeExistTest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateLanguageExistTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginclick</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateClientLogoExistTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginclickWithInvaliduser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateApplogoExistTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateLoginPageExistTest</span>
-                <span class="method-start">59036 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateLoginPageExistTest status=SUCCESS method=LoginPageTest2.validateLoginPageEx...)</span>
-                <span class="method-start">59253 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validateLoginPageExistTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">59692 ms</span>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.loginclickWithInvaliduser() throws java.lang.In...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateApplogoExistTest(), Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateRemembermeExistTest(), Chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateClientLogoExistTest() throws java.lang....)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateLanguageExistTest(), Chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateApplogoExistTest(), ff)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.loginclickWithInvaliduser() throws java.lang.In...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateRemembermeExistTest(), ff)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateLoginPageExistTest(), Chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateLoginPageExistTest(), ff)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateClientLogoExistTest() throws java.lang....)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.loginclick() throws java.io.IOException, ff)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.loginclick() throws java.io.IOException, Chrome)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.avlview.app.testcases.LoginPageTest2.validateLanguageExistTest(), ff)</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateClientLogoExistTest</span>
-                <span class="method-start">77692 ms</span>
+                <span class="method-start">40392 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateRemembermeExistTest</span>
+                <span class="method-start">41705 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=validateClientLogoExistTest status=SUCCESS method=LoginPageTest2.validateClientLogo...)</span>
-                <span class="method-start">79122 ms</span>
+                <span class="method-start">42937 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">79390 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=validateRemembermeExistTest status=SUCCESS method=LoginPageTest2.validateRememberme...)</span>
+                <span class="method-start">43417 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validateApplogoExistTest</span>
-                <span class="method-start">94442 ms</span>
+                <span class="method-start">44042 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=validateApplogoExistTest status=SUCCESS method=LoginPageTest2.validateApplogoExistT...)</span>
-                <span class="method-start">94567 ms</span>
+                <span class="method-start">44428 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">94808 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateRemembermeExistTest</span>
-                <span class="method-start">110924 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginclickWithInvaliduser</span>
+                <span class="method-start">45120 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validateRemembermeExistTest status=SUCCESS method=LoginPageTest2.validateRememberme...)</span>
-                <span class="method-start">112380 ms</span>
+                <span class="method-name">teardown([TestResult name=loginclickWithInvaliduser status=FAILURE method=LoginPageTest2.loginclickWithInvali...)</span>
+                <span class="method-start">56057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginclick</span>
+                <span class="method-start">63998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateLanguageExistTest</span>
+                <span class="method-start">66728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=validateLanguageExistTest status=SUCCESS method=LoginPageTest2.validateLanguageExis...)</span>
+                <span class="method-start">66863 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

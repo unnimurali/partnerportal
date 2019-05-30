@@ -1,117 +1,847 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
+<testng-results skipped="8" failed="1" ignored="2" total="16" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="112995" started-at="2019-05-16T10:29:22Z" finished-at="2019-05-16T10:31:15Z">
+  <suite name="Suite" duration-ms="110521" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:23:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="112995" started-at="2019-05-16T10:29:22Z" finished-at="2019-05-16T10:31:15Z">
+    <test name="Test" duration-ms="544" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
       <class name="com.avlview.app.testcases.LoginPageTest2">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="59036" started-at="2019-05-16T10:29:22Z" finished-at="2019-05-16T10:30:21Z">
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="191" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateApplogoExistTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateLoginPageExistTest" duration-ms="214" started-at="2019-05-16T10:30:21Z" finished-at="2019-05-16T10:30:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginPageExistTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="414" started-at="2019-05-16T10:30:21Z" finished-at="2019-05-16T10:30:21Z">
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="198" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginPageExistTest status=SUCCESS method=LoginPageTest2.validateLoginPageExistTest()[pri:1, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.loginclickWithInvaliduser() throws java.lang.InterruptedException]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="18000" started-at="2019-05-16T10:30:21Z" finished-at="2019-05-16T10:30:39Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateClientLogoExistTest" duration-ms="1428" started-at="2019-05-16T10:30:39Z" finished-at="2019-05-16T10:30:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateClientLogoExistTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="254" started-at="2019-05-16T10:30:41Z" finished-at="2019-05-16T10:30:41Z">
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="205" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateClientLogoExistTest status=SUCCESS method=LoginPageTest2.validateClientLogoExistTest()[pri:2, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateRemembermeExistTest()]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="15052" started-at="2019-05-16T10:30:41Z" finished-at="2019-05-16T10:30:56Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateApplogoExistTest" duration-ms="118" started-at="2019-05-16T10:30:56Z" finished-at="2019-05-16T10:30:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateApplogoExistTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="237" started-at="2019-05-16T10:30:56Z" finished-at="2019-05-16T10:30:57Z">
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="204" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateApplogoExistTest status=SUCCESS method=LoginPageTest2.validateApplogoExistTest()[pri:3, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateLanguageExistTest()]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="16116" started-at="2019-05-16T10:30:57Z" finished-at="2019-05-16T10:31:13Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateRemembermeExistTest()[pri:4, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateRemembermeExistTest" duration-ms="1454" started-at="2019-05-16T10:31:13Z" finished-at="2019-05-16T10:31:14Z">
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="202" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateLoginPageExistTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="197" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.loginclick() throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="setup" is-config="true" duration-ms="203" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:21:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateClientLogoExistTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validateRemembermeExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateRemembermeExistTest" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateRemembermeExistTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="551" started-at="2019-05-16T10:31:14Z" finished-at="2019-05-16T10:31:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateRemembermeExistTest status=SUCCESS method=LoginPageTest2.validateRemembermeExistTest()[pri:4, instance:com.avlview.app.testcases.LoginPageTest2@773a3] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="validateLanguageExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateLanguageExistTest" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLanguageExistTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="loginclick()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="loginclick" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginclick -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="validateClientLogoExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateClientLogoExistTest" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClientLogoExistTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="loginclickWithInvaliduser()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="loginclickWithInvaliduser" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginclickWithInvaliduser -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="validateApplogoExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateApplogoExistTest" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplogoExistTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="validateLoginPageExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="validateLoginPageExistTest" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:120)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageExistTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@773a3]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:21:20Z" finished-at="2019-05-30T10:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.avlview.app.testcases.LoginPageTest2 -->
     </test> <!-- Test -->
+    <test name="Test1" duration-ms="110521" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:23:10Z">
+      <class name="com.avlview.app.testcases.LoginPageTest2">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="setup" is-config="true" duration-ms="45120" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:22:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.loginclickWithInvaliduser() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="setup" is-config="true" duration-ms="40391" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:22:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateClientLogoExistTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="setup" is-config="true" duration-ms="44041" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:22:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateApplogoExistTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="setup" is-config="true" duration-ms="41704" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:22:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateRemembermeExistTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="setup" is-config="true" duration-ms="66726" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateLanguageExistTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="setup" is-config="true" duration-ms="79754" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:22:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.validateLoginPageExistTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timeout loading page after 50000ms
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'MKRISHNAN', ip: '192.168.0.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190516215225, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 8636, moz:profile: C:\Users\mkrishnan\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8eea8161-a0e6-49d4-8799-514...}
+Session ID: 8eea8161-a0e6-49d4-8799-5146bd4b738e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 50000ms
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'MKRISHNAN', ip: '192.168.0.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190516215225, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 8636, moz:profile: C:\Users\mkrishnan\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8eea8161-a0e6-49d4-8799-514...}
+Session ID: 8eea8161-a0e6-49d4-8799-5146bd4b738e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:123)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="setup" is-config="true" duration-ms="63996" started-at="2019-05-30T10:21:19Z" finished-at="2019-05-30T10:22:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.avlview.app.testcases.LoginPageTest2.loginclick() throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateClientLogoExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="validateClientLogoExistTest" duration-ms="2542" started-at="2019-05-30T10:22:00Z" finished-at="2019-05-30T10:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClientLogoExistTest -->
+        <test-method status="PASS" signature="validateRemembermeExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="validateRemembermeExistTest" duration-ms="1710" started-at="2019-05-30T10:22:01Z" finished-at="2019-05-30T10:22:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRemembermeExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="teardown" is-config="true" duration-ms="4647" started-at="2019-05-30T10:22:02Z" finished-at="2019-05-30T10:22:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateClientLogoExistTest status=SUCCESS method=LoginPageTest2.validateClientLogoExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="teardown" is-config="true" duration-ms="4453" started-at="2019-05-30T10:22:03Z" finished-at="2019-05-30T10:22:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateRemembermeExistTest status=SUCCESS method=LoginPageTest2.validateRemembermeExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="validateApplogoExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="validateApplogoExistTest" duration-ms="385" started-at="2019-05-30T10:22:03Z" finished-at="2019-05-30T10:22:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateApplogoExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="teardown" is-config="true" duration-ms="3188" started-at="2019-05-30T10:22:04Z" finished-at="2019-05-30T10:22:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateApplogoExistTest status=SUCCESS method=LoginPageTest2.validateApplogoExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="FAIL" signature="loginclickWithInvaliduser()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="loginclickWithInvaliduser" duration-ms="10935" started-at="2019-05-30T10:22:05Z" finished-at="2019-05-30T10:22:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Invalid username/password, please try again!] but found [You have entered an invalid username or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Invalid username/password, please try again!] but found [You have entered an invalid username or password.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.avlview.app.testcases.LoginPageTest2.loginclickWithInvaliduser(LoginPageTest2.java:112)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginclickWithInvaliduser -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="teardown" is-config="true" duration-ms="2052" started-at="2019-05-30T10:22:15Z" finished-at="2019-05-30T10:22:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginclickWithInvaliduser status=FAILURE method=LoginPageTest2.loginclickWithInvaliduser()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="loginclick()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="loginclick" duration-ms="46390" started-at="2019-05-30T10:22:23Z" finished-at="2019-05-30T10:23:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginclick -->
+        <test-method status="PASS" signature="validateLanguageExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="validateLanguageExistTest" duration-ms="134" started-at="2019-05-30T10:22:26Z" finished-at="2019-05-30T10:22:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLanguageExistTest -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="teardown" is-config="true" duration-ms="2070" started-at="2019-05-30T10:22:26Z" finished-at="2019-05-30T10:22:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLanguageExistTest status=SUCCESS method=LoginPageTest2.validateLanguageExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="validateLoginPageExistTest()[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="validateLoginPageExistTest" duration-ms="0" started-at="2019-05-30T10:22:39Z" finished-at="2019-05-30T10:22:39Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timeout loading page after 50000ms
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'MKRISHNAN', ip: '192.168.0.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190516215225, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 8636, moz:profile: C:\Users\mkrishnan\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8eea8161-a0e6-49d4-8799-514...}
+Session ID: 8eea8161-a0e6-49d4-8799-5146bd4b738e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timeout loading page after 50000ms
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'MKRISHNAN', ip: '192.168.0.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190516215225, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 8636, moz:profile: C:\Users\mkrishnan\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8eea8161-a0e6-49d4-8799-514...}
+Session ID: 8eea8161-a0e6-49d4-8799-5146bd4b738e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.avlview.app.base.TestBaseGridTesting.Initialization(TestBaseGridTesting.java:123)
+at com.avlview.app.testcases.LoginPageTest2.setup(LoginPageTest2.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageExistTest -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:22:39Z" finished-at="2019-05-30T10:22:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.avlview.app.testcases.LoginPageTest2@1080771]" name="teardown" is-config="true" duration-ms="0" started-at="2019-05-30T10:23:10Z" finished-at="2019-05-30T10:23:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.avlview.app.testcases.LoginPageTest2 -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

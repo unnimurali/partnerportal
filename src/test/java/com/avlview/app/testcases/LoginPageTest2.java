@@ -1,48 +1,56 @@
 package com.avlview.app.testcases;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.avlview.app.base.TestBase2;
-import com.avlview.app.pages.ClientsPage;
+import com.avlview.app.base.TestBaseGridTesting;
+import com.avlview.app.pages.ClientsPage2;
 import com.avlview.app.pages.ForgotPasswordPage;
+import com.avlview.app.pages.HomePage;
 import com.avlview.app.pages.LoginPage2;
 
-public class LoginPageTest2 extends TestBase2 {
-
+public class LoginPageTest2 extends TestBaseGridTesting {
+	// TestBaseParallelTesting
 	// public ExtentReports extent;
 	// public static ExtentTest extentTest;
 
 	LoginPage2 lp;
-	ClientsPage cp;
+	ClientsPage2 cp;
 	ForgotPasswordPage fp;
+	HomePage hp;
 
 	public LoginPageTest2() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	@Parameters("browsername")
 	@BeforeMethod
-	public void setup(String bname) throws IOException {
+	@Parameters("browsername")
+	public void setup(Method method, @Optional String browser) throws IOException {
 		// extentTest = ExtentManager.getInstance().startTest((this.getClass().getName()
 		// + "::" + method.getName()), method.getName());
 
-		openbrowsers(bname);
+		long id = Thread.currentThread().getId();
+		System.out.println("Before test-method. Thread id is: " + id);
+
+		Initialization(browser);
 
 		lp = new LoginPage2();
-		// cp = new ClientsPage();
-		// fp = new ForgotPasswordPage();
+		cp = new ClientsPage2();
+		fp = new ForgotPasswordPage();
+		hp = new HomePage();
 
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(enabled = true)
 	public void validateLoginPageExistTest() {
 
 		log.info("Inside validateLoginPageExistTest");
@@ -53,7 +61,7 @@ public class LoginPageTest2 extends TestBase2 {
 		log.info("Sucessfully executed validateLoginPageExistTest");
 	}
 
-	@Test(priority = 2, enabled = true)
+	@Test(enabled = true)
 	public void validateClientLogoExistTest() throws InterruptedException {
 
 		// extentTest = extent.startTest("validateClientLogoExistTest");
@@ -62,7 +70,7 @@ public class LoginPageTest2 extends TestBase2 {
 		Assert.assertTrue(validateClientLogo);
 	}
 
-	@Test(priority = 3, enabled = true)
+	@Test(enabled = true)
 	public void validateApplogoExistTest() {
 
 		// extentTest = extent.startTest("validateApplogoExistTest");
@@ -71,7 +79,7 @@ public class LoginPageTest2 extends TestBase2 {
 		Assert.assertTrue(ApplogoExist);
 	}
 
-	@Test(priority = 4, enabled = true)
+	@Test(enabled = true)
 	public void validateRemembermeExistTest() {
 
 		// extentTest = extent.startTest("validateRemembermeExistTest");
@@ -79,7 +87,7 @@ public class LoginPageTest2 extends TestBase2 {
 		Assert.assertEquals(Rememberme, "Remember me");
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(enabled = true)
 	public void validateLanguageExistTest() {
 
 		// extentTest = extent.startTest("validateLanguageExistTest");
@@ -87,7 +95,7 @@ public class LoginPageTest2 extends TestBase2 {
 		Assert.assertEquals(Language, "English");
 	}
 
-	@Test(priority = 6, enabled = false)
+	@Test(enabled = false)
 	public void forgotpasswordclick() throws IOException, InterruptedException {
 		// extentTest = extent.startTest("forgotpasswordclick");
 		fp = lp.ForgotPassword();
@@ -97,7 +105,7 @@ public class LoginPageTest2 extends TestBase2 {
 
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(enabled = true)
 	public void loginclickWithInvaliduser() throws InterruptedException {
 		// extentTest = extent.startTest("loginclickWithInvaliduser");
 		String valmsg = lp.validationMessage(prop.getProperty("invaliduname"), prop.getProperty("invalidpwd"));
@@ -105,10 +113,10 @@ public class LoginPageTest2 extends TestBase2 {
 
 	}
 
-	@Test(priority = 8, enabled = false)
+	@Test(enabled = true)
 	public void loginclick() throws IOException {
 		// extentTest = extent.startTest("loginclick");
-		cp = lp.login(prop.getProperty("uname"), prop.getProperty("pwd"));
+		hp = lp.login(prop.getProperty("uname"), prop.getProperty("pwd"));
 
 		System.out.println(cp.toString());
 

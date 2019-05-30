@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="10" name="Test(failed)" parallel="methods">
-    <parameter name="browsername" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <parameter name="browsername" value="Chrome"/>
     <classes>
       <class name="com.avlview.app.testcases.LoginPageTest2">
         <methods>
           <include name="validateClientLogoExistTest"/>
+          <include name="loginclick"/>
           <include name="validateLoginPageExistTest"/>
           <include name="setup"/>
+          <include name="loginclickWithInvaliduser"/>
+          <include name="validateLanguageExistTest"/>
           <include name="validateApplogoExistTest"/>
           <include name="validateRemembermeExistTest"/>
           <include name="teardown"/>
@@ -16,4 +19,17 @@
       </class> <!-- com.avlview.app.testcases.LoginPageTest2 -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test1(failed)" parallel="methods">
+    <parameter name="browsername" value="ff"/>
+    <classes>
+      <class name="com.avlview.app.testcases.LoginPageTest2">
+        <methods>
+          <include name="validateLoginPageExistTest"/>
+          <include name="setup"/>
+          <include name="loginclickWithInvaliduser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.avlview.app.testcases.LoginPageTest2 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
